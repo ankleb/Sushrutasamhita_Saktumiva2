@@ -1,0 +1,2529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="edition.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Nepalese Version of the Suśrutasaṃhitā, Sūtrasthāna, Chapter 6 (Ṛtucaryā): machine-assisted provisional text</title>
+            <respStmt><resp>Machine-assisted collation review and provisional editorial suggestions</resp><name xml:id="AI">Claude (Anthropic), under the direction of Dominik Wujastyk</name></respStmt></titleStmt>
+
+            <publicationStmt>
+                <authority>The Suśruta Project</authority>
+                <idno>SS.sū.2020-11</idno>
+                <availability status="restricted">
+                    <p>Copyright Notice</p>
+                    <p>Copyright (C) Dominik Wujastyk</p>
+                    <p>
+                        <ref target="http://creativecommons.org/licenses/by-sa/3.0/" type="licence">Distributed by <ref target="http://sarit.indology.info" type="url">Dominik
+                                Wujastyk</ref> under a Creative Commons
+                            Attribution-ShareAlike 3.0 Unported License. </ref>
+                    </p>
+                    <p>Under this licence, you are free <list>
+                            <item>to Share — to copy, distribute and transmit the
+                                work</item>
+                            <item>to Remix — to adapt the work </item>
+                        </list></p>
+                    <p>Under the following conditions:</p>
+                    <p>
+                        <list>
+                            <item>Attribution — You must attribute the work in the manner
+                                specified by the author or licensor (but not in any way
+                                that suggests that they endorse you or your use of the
+                                work).</item>
+                            <item>Share Alike — If you alter, transform, or build upon
+                                this work, you may distribute the resulting work only
+                                under the same or similar license to this one.</item>
+                        </list>
+                    </p>
+                    <p>More information and fuller details of this license are given on
+                        the Creative Commons website.</p>
+                    <p>SARIT assumes no responsibility for unauthorised use that infringes
+                        the rights of any copyright owners, known or unknown.</p>
+                </availability>
+                <address>
+                    <name>University of Alberta.</name>
+                </address>
+                <authority>
+                    <name>The Suśruta Project</name></authority>
+                <date>2020-2024</date>
+                <pubPlace>The University of Alberta. <note xml:lang="en">The Suśruta
+                        Project. The vulgate edition of 1938 was used for the collation of
+                        this sthāna</note>
+                </pubPlace>
+                <publisher>The Suśruta Project.<ptr target="http://sushrutaproject.github.io"/>
+                </publisher>
+
+            <note type="status" xml:lang="en">This file contains a MACHINE-ASSISTED PROVISIONAL text of Sūtrasthāna chapter 6. Unlike the critically edited chapters (Sūtrasthāna 1, 2, 13, 14, 16), the readings here derive from automatic collation reviewed by an AI system against the Nepalese witnesses K, N, and H and the 1938 vulgate (A1938). Editorial interventions in the base text are marked visibly with &lt;choice&gt;&lt;sic&gt;/&lt;corr resp="#AI"&gt; and should be verified before citation.</note></publicationStmt>
+
+
+            <sourceDesc>
+                <msDesc xml:id="Sanskrit" xml:lang="en">
+                    <msIdentifier>
+                        <idno type="siglum">NE</idno>
+                    </msIdentifier>
+
+                </msDesc>
+
+                <listWit>
+                    <witness xml:id="MN">The <title>Mādhavanidāna</title>, <abbr type="siglum">MN</abbr>
+                        <idno type="siglum">Mādhavanidāna</idno></witness>
+
+                    <witness xml:id="NAK_1-1146">MS Kathmandu NAK 1-1146 <abbr type="siglum">1-1146</abbr>
+                        <idno type="siglum">MS NAK 1-1146</idno> A paper manuscript in
+                        Devanāgarī. 67 ff. Filmed as reel no A 224-9. Covers 1.8.3 -
+                        1.44.24 of the Sūtrasthāna. </witness>
+                
+<witness xml:id="A1938" source="01-su-vulgate-1938-1-31.xml">
+<abbr>A1938</abbr>
+<expan>Printed edition: Ācārya 1938: Sūtrasthāna 1-31</expan>
+</witness>
+<witness xml:id="K" source="kl_699_sutrasthana-1-31.xml">
+<abbr>K</abbr>
+<expan>MS Kathmandu KL 699: Sūtrasthāna 1-31</expan>
+<listWit>
+<witness xml:id="Kac" n="ac">
+<abbr>Kac</abbr>
+<expan>MS Kathmandu KL 699: Sūtrasthāna 1-31 [ante correctionem]</expan>
+</witness>
+<witness xml:id="Kpc" n="pc">
+<abbr type="siglum">Kpc</abbr>
+<expan>MS Kathmandu KL 699: Sūtrasthāna 1-31 [post correctionem]</expan>
+</witness>
+</listWit>
+</witness>
+<witness xml:id="N" source="nak_1-1079_sutrasthana-1-31.xml">
+<abbr>N</abbr>
+<expan>MS Kathmandu NAK 1-1079: Sūtrasthāna 1-31</expan>
+<listWit>
+<witness xml:id="Nac" n="ac">
+<abbr>Nac</abbr>
+<expan>MS Kathmandu NAK 1-1079: Sūtrasthāna 1-31 [ante correctionem]</expan>
+</witness>
+<witness xml:id="Npc" n="pc">
+<abbr type="siglum">Npc</abbr>
+<expan>MS Kathmandu NAK 1-1079: Sūtrasthāna 1-31 [post correctionem]</expan>
+</witness>
+</listWit>
+</witness>
+<witness xml:id="H" source="nak_5-333_sutrasthana-1-31.xml">
+<abbr>H</abbr>
+<expan>MS Kathmandu NAK 5-333: Sūtrasthāna 1-31</expan>
+<listWit>
+<witness xml:id="Hac" n="ac">
+<abbr>Hac</abbr>
+<expan>MS Kathmandu NAK 5-333: Sūtrasthāna 1-31 [ante correctionem]</expan>
+</witness>
+<witness xml:id="Hpc" n="pc">
+<abbr type="siglum">Hpc</abbr>
+<expan>MS Kathmandu NAK 5-333: Sūtrasthāna 1-31 [post correctionem]</expan>
+</witness>
+</listWit>
+</witness>
+<witness xml:id="NE" source="provisional-edition_sutrasthana-1-31_new.xml">
+<abbr>NE</abbr>
+<expan>The Nepalese Version of the Suśrutasaṃhitā, Sūtrasthāna 1-31, based
+                    on the Nepalese MSS</expan>
+</witness></listWit>
+            </sourceDesc>
+
+        </fileDesc>
+
+
+        <!--     <xenoData>
+            <stemma format="nexml">
+                <nex:nexml generator="SplitsTree6" version="0.9"
+                    xmlns:nex="http://www.nexml.org/2009" xmlns="http://www.nexml.org/2009"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:sp5="https://github.com/danielhuson/splitstree6">
+                    <otus id="otus1" label="TaxaBlock">
+                        <otu id="otu1" label="H"/>
+                        <otu id="otu2" label="K"/>
+                        <otu id="otu3" label="N"/>
+                    </otus>
+                    <trees otus="otus1" id="trees1" label="TreesBlock">
+                        <tree id="tree1" label="tree1" xsi:type="nex:FloatTree">
+                            <node id="n1" label="H" root="true"/>
+                            <node id="n2" label="K" otu="otu2"/>
+                            <node id="n3" label="N" otu="otu3"/>
+                            <node id="n4"/>
+                            <edge source="n4" target="n2" id="e1" length="0.0046311914920806885"/>
+                            <edge source="n4" target="n3" id="e2" length="0.015896709635853767"/>
+                            <edge source="n1" target="n4" id="e3" length="0.0057309819385409355"/>
+                        </tree>
+                    </trees>
+                </nex:nexml>
+            </stemma>
+        </xenoData>-->
+
+
+        <revisionDesc>
+            <change when="2026-07-15" who="Claude/AI">Generated single-file machine-assisted provisional text for Sūtrasthāna 6, with two visible base-text corrections (6.13, 6.15), a silent normalization (6.6), and apparatus notes at 6.3, 6.7, 6.11, 6.13, 6.14, 6.15, 6.16.</change><change when="2020-11-04" who="Dominik Wujastyk">Began this file.</change>
+            <change when="2023-11-04" who="Dominik Wujastyk"> added 1.41, based on MS
+                N</change>
+            <change when="2023-06-26" who="Dominik Wujastyk">Separated the file into two
+                parts, 1-31 and 32-end, because of processing limits at Saktumiva</change>
+            <change when="2023-10-25" who="Dominik Wujastyk">Added all remaining adhyāyas
+                from K (from H for 19 and 20) and stripped out transcription codes to make
+                draft provisional edition files.</change>
+            <change when="2024-02-05" who="Lisa Brooks">The numbering and text of SS.1.13
+                are collated against the 1938 edition, not the 1931 edition.</change>
+            <change when="2024-06-24" who="Deepro Chakraborty">Finalized the edition of
+                SS.1.8</change>
+            <change when="2024-03-27" who="Dominik Wujastyk">Completed a major overhaul
+                ("meta-edit") of the all Sūtrasthāna files. I checked all passages and
+                made sure that xml:id tags matched correctly across all files, unifying
+                and separating text-portions as needed. I separated words ad hoc. I
+                corrected readings and checked against the MSS in many cases, but again ad
+                hoc. There is much remaining to be done, but the Sūtrasthāna is now in a
+                coherent format at the macro scale.</change>
+            <change when="2025-09-10" who="Deepro Chakraborty">Corrections in
+                1.12</change>
+            <change when="2025-09-16" who="Deepro Chakraborty">Rearranged xml ids, made
+                other corrections and added the missing part in 1.12</change>
+            <change when="2025-11-02" who="Deepro Chakraborty">Minor corrections in
+                1.12</change>
+            <change when="2025-11-11" who="Deepro Chakraborty">minor corrections in
+                1.13.1-12</change>
+            <change when="2025-11-13" who="Deepro Chakraborty">minor corrections in
+                1.13</change>
+            <change when="2025-12-02" who="Deepro Chakraborty">splitting 1.13.22</change>
+            <change when="2026-01-05" who="Deepro Chakraborty">Removed extra splitting of
+                lines in 1.12 that was made in order to collate it against L. The file
+                with splitting is sent to Dominik Wujastyk through email.</change>
+            <change when="2026-03-31" who="Deepro Chakraborty">Added xml:id="SS.1.27.18-19
+                and updated its reading</change>
+            <change who="Dominik Wujastyk" when="2026-04-04">Completed the addition of
+                verses 1.29.add1 - add10 that were skipped in the original transcription
+                of all three manuscripts, K, N, and H</change>
+        </revisionDesc>
+
+    </teiHeader>
+
+
+    <text><body><div n="1" type="sthāna"><head>[Sūtrasthāna]</head><div n="6" type="adhyāya">
+
+
+                    <head>[Adhyāya 6]</head>
+
+                    <l xml:id="SS.1.6.1">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.1</label>
+                        <caesura/>
+                         athāto ṛtucaryāṃ vyākhyāsyāmaḥ ||</l>
+
+                    <l xml:id="SS.1.6.2"/>
+
+                    <l xml:id="SS.1.6.3">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.3</label>
+                        <caesura/>
+                         kālo hi bhagavān svayambhur anādimadhyanidhano 'tra
+                        rasavyāpatsampattayo jīvitamaraṇe ca manuṣyāṇām āyatte sa sūkṣmām
+                        api kalān na līyata iti kālaḥ | saṅkalayati<anchor n="SS.1.6.3-n1"/> kalayati vā bhūtānīti
+                        kālaḥ |</l>
+
+                    <ab corresp="#SS.1.6.3" type="apparatus"><list type="Notes"><item xml:lang="en" corresp="#SS.1.6.3-n1">saṅkalayati] Nep witness K, with A1938; N H saṅkālayati. The nirukti “saṅkalayati kalayati vā bhūtānīti kālaḥ” derives kāla from √kal (class 10, kalayati, short a); the paired gloss kalayati in the same clause fixes the vowel. N and H have lengthened the first member to saṅkālayati; K preserves the correct short a. (machine-assisted note, resp #AI)</item></list></ab><l xml:id="SS.1.6.4">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.4</label>
+                        <caesura/>
+                         tasya saṃvatsarātmano bhagavān ādityo gativiśeṣeṇa
+                        nimeṣakāṣṭhākalāmuhūrttāhorātrapakṣamāsartvayanasaṃvatsarayugapravibhāgaṃ
+                        karoti |</l>
+
+                    <l xml:id="SS.1.6.5">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.5</label>
+                        <caesura/>
+                         tatra laghvakṣinipātamātro nimeṣaḥ | pañcadaśanimeṣā kāṣṭhā
+                        triṅśatkāṣṭhā kalā | viṅśatikalā muhūrttaḥ kalāyāḥ daśabhāgaś ca |
+                        triṃśatmuhūrttam ahorātraṃ | pañcadaśāhorātraḥ pakṣaḥ | sa
+                        dvividhaḥ kṛṣṇaḥ śuklaś ca tau māsaḥ | </l>
+
+                    <l xml:id="SS.1.6.6">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.6</label>
+                        <caesura/>
+                         tatra māghādayo dvādaśa māsāḥ saṃvatsaraḥ | dvimāsikam ṛtuṅ kṛtvā
+                        ṣaḍṛtavo bhavanti || te ca śiśiravasantagrīṣmavarṣāśaraddhemantāḥ
+                        | teṣāṃ tapastapasyau śiśiraḥ | madhumādhavau vasantaḥ |
+                        śuciśukrau grīṣmaḥ nabhonabhasyau varṣā | iṣorjau śarat |
+                        sahassahasyau hemanta iti |</l>
+
+                    <l xml:id="SS.1.6.7">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.7</label>
+                        <caesura/>
+                         ta ete śītoṣṇavarṣavātalakṣaṇāḥ | candrādityayoḥ
+                        kālavibhāgakaratvād ayane dve bhavataḥ | dakṣiṇam uttarañ ca |
+                        tayor dakṣiṇam varṣāśaraddhemantāḥ teṣu bhagavān āpyāyate somaḥ |
+                        amlalavaṇamadhurāś ca rasā balavanto bhavanti | uttarottarañ ca
+                        sarvaprāṇināṃ balam abhivarddhate | uttaraṃ śiśiravasantagrīṣmāḥ |
+                        teṣu bhagavān āpyāyate rkaḥ | kaṭutiktakaṣāyāś ca rasā balavattarā<anchor n="SS.1.6.7-n1"/>
+                        bhavanti | uttarottaraś ca prāṇinām balam parihīyate ||</l>
+
+                    <ab corresp="#SS.1.6.7" type="apparatus"><list type="Notes"><item xml:lang="en" corresp="#SS.1.6.7-n1">balavattarā] H, Kpc; N and A1938 level to the positive balavanto (as in the antithetical dakṣiṇāyana clause above). The comparative “stronger still” is the lectio difficilior and suits the intensifying logic whereby, in the northern solar course, the pungent, bitter, and astringent (drying) rasas grow stronger while the strength of beings is progressively diminished (parihīyate). Retained. (machine-assisted note, resp #AI)</item></list></ab><l xml:id="SS.1.6.8">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.8</label>
+                        <caesura/>
+                         bhavati cātra ||
+                        <caesura/>
+                         somaḥ kledayate bhūmiṃ sūryaḥ śoṣayate punaḥ |
+                        <caesura/>
+                         tāv ubhāv api saṃśritya vāyuḥ pālayati prajāḥ ||</l>
+
+                    <l xml:id="SS.1.6.9">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.9</label>
+                        <caesura/>
+                         atha khalv ayane yugapat saṃvatsaro bhavati | te dve ayane
+                        varṣasaṃvatsaraḥ parivatsaraḥ iḍāvatsaraḥ vatsara ity evaṃ pañca
+                        pañca varṣāṇi || te pañca yugam iti saṃjñāṃ labhante sa eṣa
+                        nimeṣādir yugaparyantaḥ kālaś cakravat parivarttamānaḥ kālacakra
+                        ity ucyate | </l>
+
+                    <l xml:id="SS.1.6.9.add">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.9.add</label>
+                        <caesura/>
+                         evaṃ dakṣiṇāyane rātrir vyākhyātā ||</l>
+
+                    <l xml:id="SS.1.6.10">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.10</label>
+                        <caesura/>
+                         iha tu varṣāśaraddhemantavasantagrīṣmaprāvṛṣaḥ ṣaḍṛtavo bhavanti
+                        | doṣopacayaprakopapraśamanimittaṃ | te tu bhādrapadādyair
+                        dvimāsike naivaṃ vyākhyātāḥ | tadyathā | bhadrapadāśvayujau varṣāḥ
+                        kārttikamārgaśīrṣau śarat | pauṣamāghau hemantaḥ | phālgunacaitrau
+                        vasantaḥ | vaiśākhajyeṣṭhau grīṣmaḥ | āṣāḍhaśrāvaṇau prāvṛḍ iti
+                        ||</l>
+
+                    <l xml:id="SS.1.6.11">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.11</label>
+                        <caesura/>
+                         tatra varṣāsv auṣadhyas taruṇyo 'lpavīryā āhāratvam upagatā
+                        vidahyante | āpaś cāpraśāntāḥ kṣitimalaprāyās tās tūpayujyamānā
+                        nabhasi meghāvatate jalapraklinnāyāṃ bhūmau klinnadehānāṃ dehināṃ
+                            śīta<pc> </pc>vāta<pc> </pc>varṣa<pc> </pc>viṣṭambhitāgnīnāṃ
+                        vidahyante | sa vidāhāt pittasañcayam āpādayanti | sa sañcayaḥ
+                        śaradi praviralameghe viyaty upaśuṣyati paṅke 'rka<pc> </pc>kiraṇa<pc> </pc>pravilāyitaḥ paittikāṃ vyādhīṃ janayati
+                        | tā evauṣadhayaḥ kālapariṇāmāt pariṇatavīryā balavatyo hemante
+                        bhavanti | āpaś ca praśāntāḥ snigdhā atyarthaṃ gurvyas tā
+                        upayujyamānāḥ mandakiraṇatvād bhānos satuṣāraupa<pc> </pc>ṣṭambhita<pc> </pc>dehānāṃ dehinām avidagdhāḥ snehād
+                        gauravād upalepitvāc ca śleṣmaṇas sañcayam āpādayanti | sa saṃcayo
+                        vasante 'rka<pc> </pc>kiraṇa<pc> </pc>pravilāyitaḥ śleṣmikāṃ
+                        vyādhīṃ janayati | tā evauṣadhyau<anchor n="SS.1.6.11-n2"/> grīṣmaniḥsārā rūkṣā
+                        atimātralaghvyo bhavaty āpaś ca tā upayujyamānāḥ | tatra
+                        śaraddhemantayor madhyasamam ahorātraṃ yugapac cādhimāsakau
+                        bhavataḥ | viṃśatikāṣṭhāś caikanimeṣārdhaś ca dinaparivṛddhir
+                        uttarāyaṇe |<anchor n="SS.1.6.11.1-n1"/>
+                        sūryapratāpopaśoṣitadehānāṃ dehināṃ raukṣyāl laghavāc ca vāyoḥ
+                        sañcayam āpādayanti | sa sañcayaḥ prāvṛṣi cātyarthaṃñ
+                        jalopaklinnāyāṃ bhūmau cātiklinnadehānāṃ dehināṃ śītavātavarṣerito
+                        vātikān vyādhīn janayati | evam eṣāṃ doṣāṇāṃ sañcayaprakopahetur
+                        uktaḥ | </l>
+
+                    <ab corresp="#SS.1.6.11" type="apparatus">
+                        <list type="Notes">
+                            <item xml:lang="en" corresp="#SS.1.6.11-n1">A later hand has
+                                inserted coarse parentheses around the sentence
+                                    <foreign>tatra ... uttarāyaṇe</foreign>.</item>
+                        <item xml:lang="en" corresp="#SS.1.6.11-n2">evauṣadhyau] flagged, not emended. K reads evauṣadhyau (an apparent dual) with the singular verb bhavaty; N reads evauṣadhyo (= auṣadhyaḥ, plural) with the plural bhavanty, which is internally consistent and matches the parallel construction earlier in 6.11 (tā evauṣadhayaḥ … bhavanti). The plural (auṣadhyo … bhavanty) is tentatively preferable, but the number confusion runs through all witnesses; this locus should be checked against the manuscripts before deciding. (machine-assisted note, resp #AI)</item></list>
+                    </ab>
+
+
+
+
+
+                    <l xml:id="SS.1.6.12">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.12</label>
+                        <caesura/>
+                        <anchor n="SS.1.6.12-n1"/>tatra varṣāhemantagrīṣmeṣu sañcitānān
+                        doṣāṇāṃ śaradvasantaprāvṛṭsu ca prakupitānāṃ nirharaṇaṃ |</l>
+
+                    <ab corresp="#SS.1.6.12" type="apparatus">
+                        <list type="Notes">
+                            <item xml:lang="en" corresp="#SS.1.6.12-n1">In the 1931 ed. of
+                                the vulgate, the text numbering skips from 1.61.11 to
+                                1.6.13, omitting the number 1.6.12. In the 1938 ed. the
+                                vulgate <foreign>tatra varṣāhemanta ... nirharaṇaṃ
+                                    kartavyam</foreign> is numbered 1.6.12 (not 1.6.13)
+                                and the numbers are one more than the 1931 ed. from there
+                                to the end of the <foreign>adhyāya</foreign>.</item>
+                        </list>
+                    </ab>
+
+
+                    <l xml:id="SS.1.6.13">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.13</label>
+                        <caesura/>
+                         tatra paittikānāṃ vyādhīnāṃ hemante vyupaśamaḥ | śleṣmikāṇāṃ
+                        nidāghe vātikānāṃ śaradi | svabhāvatas tv ete <choice><sic>sañcayaprakopaśamā</sic><corr resp="#AI" cert="high" source="#H #N">sañcayaprakopopaśamā</corr></choice><anchor n="SS.1.6.13-n1"/>
+                        vyākhyātāḥ ||</l>
+
+                    <ab corresp="#SS.1.6.13" type="apparatus"><list type="Notes"><item xml:lang="en" corresp="#SS.1.6.13-n1">sañcayaprakopopaśamā] corr., with H and N (A1938 agrees); the base witness K reads sañcayaprakopaśamā, having lost -upa- by haplology at the -pa|upa- juncture. The noun upaśama “subsiding” is the term used elsewhere in this chapter (cf. 6.13 vyupaśamaḥ). Machine-assisted correction of the collation base; verify against the manuscripts. (resp #AI)</item></list></ab><l xml:id="SS.1.6.14">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.14</label>
+                        <caesura/>
+                         tatra divasapūrvāhṇe vasantaliṅgaṃ | madhyāhne grīṣmasya |
+                        aparāhṇe prāvṛḍliṅgaṃ | pradoṣe vārṣikaṃ | śāradam ardharātre |
+                        pratyuṣasi haimanam<anchor n="SS.1.6.14-n1"/> upalakṣayet | evam ahorātram api varṣam iva
+                        śītoṣṇavarṣadoṣopacayaprakopopaśamair jānīyāt</l>
+
+                    <ab corresp="#SS.1.6.14" type="apparatus"><list type="Notes"><item xml:lang="en" corresp="#SS.1.6.14-n1">haimanam] Nep witness K; H hemantam, N hemanam. The times of day are characterised by vṛddhi-derived seasonal adjectives (… śāradam, [haimanam]); K continues that derivational series, whereas H reverts to the base noun. Retained. (machine-assisted note, resp #AI)</item></list></ab><l xml:id="SS.1.6.15">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.15</label>
+                        <caesura/>
+                         tatrāvyāpanneṣv ṛtuṣv avyāpannā oṣadhayo bhavanty āpaś ca | tās
+                        <choice><sic>tūpayayujyamānāḥ</sic><corr resp="#AI" cert="high" source="#H">tūpayujyamānāḥ</corr></choice><anchor n="SS.1.6.15-n1"/> prāṇāyurbalavīryaujaskaryo bhavanti |</l>
+
+                    <ab corresp="#SS.1.6.15" type="apparatus"><list type="Notes"><item xml:lang="en" corresp="#SS.1.6.15-n1">tūpayujyamānāḥ] corr., with H (N upayujyamānāḥ; A1938 upayujyamānā). Read tāḥ + upayujyamānāḥ. The base witness K has a dittographic -ya- (upa-ya-yujyamānāḥ); the identical phrase earlier in this chapter (6.11) already reads tās tūpayujyamānā in the provisional text, so the correction removes an internal inconsistency. Machine-assisted correction; verify against the manuscripts. (resp #AI)</item></list></ab><l xml:id="SS.1.6.16">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.16</label>
+                        <caesura/>
+                         tāsām<anchor n="SS.1.6.16-n1"/> punar vyāpado 'dṛṣṭakāritāni śītoṣṇavātavarṣāṇi | khalu
+                        viparītāny auṣadhīr vyāpādayanty āpaś ca |</l>
+
+                    <ab corresp="#SS.1.6.16" type="apparatus"><list type="Notes"><item xml:lang="en" corresp="#SS.1.6.16-n1">tāsām] Nep witnesses K, Hpc; N and A1938 read the masculine teṣāṃ. The antecedents auṣadhayaḥ and āpaḥ are feminine, so the feminine tāsām is required for concord. Retained. (machine-assisted note, resp #AI)</item></list></ab><l xml:id="SS.1.6.17">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.17</label>
+                        <caesura/>
+                         tāsām upayogād vividharogaprādurbhāvo marako vā bhavati |</l>
+
+                    <l xml:id="SS.1.6.18"/>
+
+                    <l xml:id="SS.1.6.19">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.19</label>
+                        <caesura/>
+                         kadācid avyāpanneṣv api kṛtyābhiśāparakṣaḥkrodhād adharmair
+                        uṣasyante janapadāḥ | viṣauṣadhipuṣpagandhena vā vāyunopanītena |
+                        kāsaśvāsapratiśyāyaśirorogajvarair upatapyante prajāḥ
+                        grahanakṣatracaritair vā |
+                        śayanāsanayānavāhanamaṇiratnopakaraṇagarhitalakṣaṇaprādurbhāvair
+                        vā</l>
+
+                    <l xml:id="SS.1.6.20">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.20</label>
+                        <caesura/>
+                         jāto 'tra | parityāga<pc> </pc>śānti<pc> </pc>prāyaścitta<pc> </pc>bali<pc> </pc>maṅgala<pc> </pc>japa<pc> </pc>homopahārejyāñjali<pc> </pc>namaskāra<pc> </pc>tapo<pc> </pc>niyama<pc> </pc>dayā<pc> </pc>dāna<pc> </pc>dīkṣābhyupagama<pc> </pc>devatā<pc> </pc>brāhmaṇa<pc> </pc>guru<pc> </pc>parair
+                        bhavitavyam evaṃ sādhu bhavati ||</l>
+
+
+                    <l xml:id="SS.1.6.21"/>
+                    <l xml:id="SS.1.6.22"/>
+                    <l xml:id="SS.1.6.23"/>
+                    <l xml:id="SS.1.6.24"/>
+                    <l xml:id="SS.1.6.25"/>
+                    <l xml:id="SS.1.6.26"/>
+                    <l xml:id="SS.1.6.27"/>
+                    <l xml:id="SS.1.6.28"/>
+                    <l xml:id="SS.1.6.29"/>
+                    <l xml:id="SS.1.6.30"/>
+                    <l xml:id="SS.1.6.31"/>
+                    <l xml:id="SS.1.6.32"/>
+                    <l xml:id="SS.1.6.33"/>
+                    <l xml:id="SS.1.6.34"/>
+                    <l xml:id="SS.1.6.35"/>
+                    <l xml:id="SS.1.6.36"/>
+
+                    <l xml:id="SS.1.6.37">
+                        <label xml:lang="en">cf. 1938 ed. 1.6.37</label>
+                        <caesura/>
+                         bhavati cātra
+                        <caesura/>
+                         svaguṇair api yukteṣu viparīteṣu vā punaḥ |
+                        <caesura/>
+                         viṣameṣv api vā doṣāḥ kupyanty ṛtuṣu dehinām iti || || </l>
+
+                    <l xml:id="SS.1.6.38"/>
+
+                    <l xml:id="SS.1.6.trailer"> || 6 ||</l>
+
+                </div></div></body></text><standOff type="apparatus" corresp="#SS.1.6.1" source="alignments/SS.1.6.1.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,6">
+    <lem wit="#K #N #H"> athāto</lem>
+    <rdg wit="#A1938">athāta</rdg>
+  </app>
+  <app loc="6,15">
+    <rdgGrp type="lemma" select="#N #H">
+      <lem>ṛtucaryāṃ</lem>
+      <rdg type="minor" wit="#H"><unclear>ṛ</unclear>tucaryāṃ</rdg>
+    </rdgGrp>
+    <rdgGrp select="#A1938 #K">
+      <rdg type="main">ṛtucaryam</rdg>
+      <rdg type="minor" wit="#K">ṛtucaryaṃ <abbr type="suspension">vyā</abbr><ex>khyāsyāmaḥ</ex> ||</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="15,28">
+    <lem wit="#N #Hpc">vyākhyāsyāmaḥ</lem>
+    <rdg wit="#A1938">adhyāyaṃ vyākhyāsyāmaḥ ||</rdg>
+    <rdg wit="#K"/>
+    <rdg wit="#Hac">vyākhyāmyāmaḥ ||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.2" source="alignments/SS.1.6.2.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">yathovāca bhagavān dhanvantariḥ ||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.3" source="alignments/SS.1.6.3.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="6,24">
+    <rdgGrp type="lemma" select="#N">
+      <lem>bhagavān svayambhur</lem>
+      <rdg type="minor" wit="#N">bhagavān svayaṃbhur</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">nāma (bhagavān ) svayambhur</rdg>
+    <rdg wit="#K">bhagavāṃ svayambhur</rdg>
+    <rdg wit="#H">bhagavān svayaṃbhūr</rdg>
+  </app>
+  <app loc="46,66">
+    <lem wit="#K #Hpc">rasavyāpatsampattayo</lem>
+    <rdg wit="#A1938">rasavyāpatsampattī</rdg>
+    <rdg wit="#N">rasavyāpas tasya tu yo</rdg>
+    <rdg wit="#Hac">ramavyāpatsampattayo</rdg>
+  </app>
+  <app loc="80,90">
+    <lem wit="#K #N #H">manuṣyāṇām</lem>
+    <rdg wit="#A1938">manuṣyāṇā</rdg>
+  </app>
+  <app loc="90,98">
+    <lem>āyatte sa</lem>
+    <rdg wit="#A1938">māyatte | sa</rdg>
+    <rdg wit="#K">āyatte ssa</rdg>
+    <rdg wit="#N">āyan<unclear>ta</unclear> sma</rdg>
+    <rdg wit="#Hac">āyante mma</rdg>
+    <rdg wit="#Hpc">āyante ssa</rdg>
+  </app>
+  <app loc="98,105">
+    <lem wit="#A1938 #K">sūkṣmām</lem>
+    <rdg wit="#N"><unclear>sṛ</unclear>kṣmam</rdg>
+    <rdg wit="#H">mū<unclear extent="1" unit="char"/><pb ana="dscn2986 fol 010.jpg lower" facs="12" n="11r"/><lb n="1"/>kṣmām</rdg>
+  </app>
+  <app loc="130,141">
+    <lem wit="#A1938 #K">saṅkalayati</lem>
+    <rdg wit="#N #H">saṅkālayati</rdg>
+  </app>
+  <app loc="141,151">
+    <lem wit="#K #N #H">kalayati vā</lem>
+    <rdg wit="#A1938">kālayati vā</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.4" source="alignments/SS.1.6.4.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="34,46">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>gativiśeṣeṇa</lem>
+      <rdg type="minor" wit="#K">gativiśeṣeṇa<cb n="1"/></rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">gativiśeṣeṇā</rdg>
+  </app>
+  <app loc="46,119">
+    <rdgGrp type="lemma" select="#K">
+      <lem>nimeṣakāṣṭhākalāmuhūrttāhorātrapakṣamāsartvayanasaṃvatsarayugapravibhāgaṃ</lem>
+      <rdg type="minor" wit="#K">nimeṣakāṣṭhākalāmuhūrttāhorātrapakṣamāsartvayanasamvatsarayugapravibhāgaṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">kṣinimeṣakāṣṭhākalāmuhūrtāhorātrapakṣamāsartvayanasaṃvatsarayugapravibhāgaṃ</rdg>
+    <rdg wit="#N">nimeṣakāṣṭhākalāmuhūrtāhorātrapakṣamāsa<cb/>rtvayana<sic ana="saṃvatsara">saṃvara</sic>yugapravibhā<cb/>gaṃ</rdg>
+    <rdg wit="#H">nimeṣakāṣṭhākalāmuhūrttāhorātrapakṣa<lb n="2"/>māsarttcayanasaṃvatsarayugapratibhāgaṅ</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.5" source="alignments/SS.1.6.5.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="5,25">
+    <rdgGrp type="lemma" select="#N #H">
+      <lem>laghvakṣinipātamātro</lem>
+      <rdg type="minor" wit="#H">laghvakṣini<cb/>pātamātro</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">laghvakṣaroccāraṇamātro</rdg>
+    <rdg wit="#K">laghvakṣinipāta</rdg>
+  </app>
+  <app loc="25,32">
+    <lem wit="#N #H">nimeṣaḥ</lem>
+    <rdg wit="#A1938">'kṣinimeṣaḥ,</rdg>
+    <rdg wit="#K">mātro <cb n="2"/>nimeṣaḥ |</rdg>
+  </app>
+  <app loc="33,48">
+    <lem wit="#N">pañcadaśanimeṣā</lem>
+    <rdg wit="#A1938">pañcadaśā'kṣinimeṣāḥ</rdg>
+    <rdg wit="#K">pañcadaśa ni</rdg>
+    <rdg wit="#H">pañcadaśanimeṣāḥ</rdg>
+  </app>
+  <app loc="48,54">
+    <lem wit="#A1938 #H">kāṣṭhā</lem>
+    <rdg wit="#K">meṣā kāṣṭhā</rdg>
+    <rdg wit="#N">mātrā kāṣṭhā</rdg>
+  </app>
+  <app loc="54,67">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>triṅśatkāṣṭhā</lem>
+      <rdg type="minor" wit="#K">triṅśat kāṣṭhā</rdg>
+      <rdg type="minor" wit="#N #H">triṃśatkāṣṭhā</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">triṃśatkāṣṭhāḥ</rdg>
+  </app>
+  <app loc="72,83">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>viṅśatikalā</lem>
+      <rdg type="minor" wit="#K">viṅśati kalā</rdg>
+      <rdg type="minor" wit="#N #H">viṃśatikalā</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">viṃśatikalo</rdg>
+  </app>
+  <app loc="92,99">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>kalāyāḥ</lem>
+      <rdg type="minor" wit="#N">kalāyā</rdg>
+      <rdg type="minor" wit="#H">kalā<unclear extent="1" unit="char"/><lb n="3"/>yā</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">kalā</rdg>
+  </app>
+  <app loc="99,111">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>daśabhāgaś ca</lem>
+      <rdg type="minor" wit="#K">daśa<lb n="3"/>bhāgaś ca</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">daśabhāgaśca,</rdg>
+  </app>
+  <app loc="112,128">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>triṃśatmuhūrttam</lem>
+      <rdg type="minor" wit="#K">triṃśat muhūrttam</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">triṃśanmuhūrta</rdg>
+    <rdg wit="#N">triṃṣan muhūrttam</rdg>
+  </app>
+  <app loc="128,137">
+    <lem wit="#K #N #H">ahorātraṃ</lem>
+    <rdg wit="#A1938">mahorātraṃ,</rdg>
+  </app>
+  <app loc="138,155">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>pañcadaśāhorātraḥ</lem>
+      <rdg type="minor" wit="#H">pañcadaśāhorātra<cb/>ḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">pañcadaśāhorātrāṇi</rdg>
+  </app>
+  <app loc="155,164">
+    <lem wit="#K #N #H">pakṣaḥ | sa</lem>
+    <rdg wit="#A1938">pakṣaḥ, sa ca</rdg>
+  </app>
+  <app loc="173,179">
+    <lem wit="#K #N #H">kṛṣṇaḥ</lem>
+    <rdg wit="#A1938">śuklaḥ</rdg>
+  </app>
+  <app loc="179,190">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>śuklaś ca tau</lem>
+      <rdg type="minor" wit="#K">śuklaś ca tau<cb n="1"/></rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">kṛṣṇaśca, tau</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.6" source="alignments/SS.1.6.6.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="21,26">
+    <lem wit="#K #N #H">māsāḥ</lem>
+    <rdg wit="#A1938">māsāḥ,</rdg>
+  </app>
+  <app loc="26,37">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>saṃvatsaraḥ</lem>
+      <rdg type="minor" wit="#K #N">samvatsaraḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938"/>
+  </app>
+  <app loc="38,48">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>dvimāsikam</lem>
+      <rdg type="minor" wit="#H">dvimā<lb n="4"/>sikam</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">dvimāsika</rdg>
+    <rdg wit="#N"><!-- MSS has this part included as part of the previous passage --> dvimāsikām</rdg>
+  </app>
+  <app loc="48,52">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>ṛtuṅ</lem>
+      <rdg type="minor" wit="#N">ṛtuṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">mṛtuṃ</rdg>
+  </app>
+  <app loc="52,57">
+    <lem wit="#A1938 #K">kṛtvā</lem>
+    <rdg wit="#N #H">kṛtva</rdg>
+  </app>
+  <app loc="65,79">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>bhavanti || te ca</lem>
+      <rdg type="minor" wit="#H">bhavanti | te ca</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">bhavanti; te</rdg>
+  </app>
+  <app loc="79,117">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>śiśiravasantagrīṣmavarṣāśaraddhemantāḥ</lem>
+      <rdg type="minor" wit="#K">śiśiravasantagrī<cb n="2"/>ṣmavarṣāśaraddhemantāḥ</rdg>
+      <rdg type="minor" wit="#Hac">śiśiravasantagrīṣma<unclear extent="1" unit="char"/><cb/>varṣā<unclear extent="1" unit="char"/>śaraddhemantāḥ</rdg>
+      <rdg type="minor" wit="#Hpc">śiśiravasantagrīṣma<unclear extent="1" unit="char"/><cb/>varṣā<unclear extent="1" unit="char"/>śaraddhemantāḥ<unclear n="1" unit="char"/></rdg>
+    </rdgGrp>
+    <rdg wit="#N">śiśiravasa<cb/>ntagrīṣmavarṣāsaraddhemantāḥ</rdg>
+  </app>
+  <app loc="118,123">
+    <rdgGrp type="lemma" select="#N #H">
+      <lem>teṣaṃ</lem>
+      <rdg type="minor" wit="#N #H">teṣan</rdg>
+    </rdgGrp>
+    <rdgGrp select="#A1938 #K">
+      <rdg type="main">teṣāṃ</rdg>
+      <rdg type="minor" wit="#K">teṣān</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="123,136">
+    <lem wit="#A1938 #K">tapastapasyau</lem>
+    <rdg wit="#N #H">tapastapsyau</rdg>
+  </app>
+  <app loc="203,210">
+    <lem wit="#A1938 #K #H">iṣorjau</lem>
+    <rdg wit="#N">
+      <sic ana="possibly iṣorjai">iṣojai</sic>
+    </rdg>
+  </app>
+  <app loc="229,236">
+    <lem wit="#A1938 #K #N #Hpc">hemanta</lem>
+    <rdg wit="#Hac">hemanta ḥ</rdg>
+  </app>
+  <app loc="236,239">
+    <rdgGrp type="lemma" select="#A1938 #K #N #Hpc">
+      <lem>iti</lem>
+      <rdg type="minor" wit="#Hpc">i ti</rdg>
+    </rdgGrp>
+    <rdg wit="#Hac">ti ||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.7" source="alignments/SS.1.6.7.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,5">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem> ta ete</lem>
+      <rdg type="minor" wit="#H">ta e<cb/>te</rdg>
+    </rdgGrp>
+    <rdg wit="#N">tu ete</rdg>
+  </app>
+  <app loc="5,29">
+    <rdgGrp type="lemma" select="#Kpc #H">
+      <lem>śītoṣṇavarṣavātalakṣaṇāḥ</lem>
+      <rdg type="minor" wit="#Kpc">śītoṣṇavarṣa<unclear>vāta</unclear>la<cb n="1"/>kṣaṇāḥ</rdg>
+    </rdgGrp>
+    <rdgGrp select="#A1938 #Kac">
+      <rdg type="main">śītoṣṇavarṣalakṣaṇāś</rdg>
+      <rdg type="minor" wit="#Kac">śītoṣṇavarṣala<cb n="1"/>kṣaṇāḥ |</rdg>
+    </rdgGrp>
+    <rdg wit="#N">śītoṣṇavarṣāvātalak<unclear>ṣ</unclear>aṇāḥ |</rdg>
+  </app>
+  <app loc="30,44">
+    <lem wit="#K #N #H">candrādityayoḥ</lem>
+    <rdg wit="#A1938">candrād ity ayoḥ</rdg>
+  </app>
+  <app loc="44,71">
+    <lem wit="#A1938 #K #H">kālavibhāgakaratvād ayane dve</lem>
+    <rdg wit="#N">kālavibhāgakaratvā<lb n="5"/>d va<unclear>ya</unclear>ne dve</rdg>
+  </app>
+  <app loc="88,97">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>uttarañ ca</lem>
+      <rdg type="minor" wit="#A1938">uttaraṃ ca</rdg>
+      <rdg type="minor" wit="#H">uttara<lb n="6"/>ñ ca</rdg>
+    </rdgGrp>
+    <rdg wit="#N">uttaraṇ ca |</rdg>
+  </app>
+  <app loc="134,150">
+    <lem wit="#A1938 #K">bhagavān āpyāyate</lem>
+    <rdgGrp select="#N #H">
+      <rdg type="main">bhagavānn āpyāyyate</rdg>
+      <rdg type="minor" wit="#H">bhagavān ā<unclear>p</unclear>yāyyate</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="150,155">
+    <lem wit="#A1938 #H">somaḥ</lem>
+    <rdg wit="#K #N">somaḥ |</rdg>
+  </app>
+  <app loc="156,176">
+    <lem wit="#A1938 #H">amlalavaṇamadhurāś ca</lem>
+    <rdg wit="#K"><unclear>āmla</unclear>lavaṇamadhurāś ca</rdg>
+    <rdg wit="#N">āmblalavaṇamadhurāś ca</rdg>
+  </app>
+  <app loc="244,251">
+    <lem wit="#K #H">uttaraṃ</lem>
+    <rdg wit="#A1938">uttaraṃ ca</rdg>
+    <rdg wit="#N">uttara</rdg>
+  </app>
+  <app loc="276,292">
+    <rdgGrp type="lemma" select="#A1938 #K">
+      <lem>bhagavān āpyāyate</lem>
+      <rdg type="minor" wit="#K">bhagavān āpyāyate<cb/></rdg>
+    </rdgGrp>
+    <rdgGrp select="#N #H">
+      <rdg type="main">bhagavānn āpyāyyate</rdg>
+      <rdg type="minor" wit="#H">bhagavān āpyāyyate</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="292,296">
+    <lem>rkaḥ</lem>
+    <rdgGrp select="#A1938 #K #N #H">
+      <rdg type="main">'rkaḥ</rdg>
+      <rdg type="minor" wit="#A1938">'rkaḥ,</rdg>
+      <rdg type="minor" wit="#K">'rkaḥ |</rdg>
+      <rdg type="minor" wit="#N #H">'rkkaḥ |</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="297,315">
+    <rdgGrp type="lemma" select="#K #Hac">
+      <lem>kaṭutiktakaṣāyāś ca</lem>
+      <rdg type="minor" wit="#Hac">kaṭutiktakaṣā yā ś ca</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">tiktakaṣāyakaṭukāś ca</rdg>
+    <rdg wit="#N">kaṭutiktakāṣāyāś ca</rdg>
+    <rdg wit="#Hpc">kaṭutiktakaṣā ya ś ca</rdg>
+  </app>
+  <app loc="319,330">
+    <rdgGrp type="lemma" select="#Kpc #H">
+      <lem>balavattarā</lem>
+      <rdg type="minor" wit="#Kpc">bala<unclear>va</unclear>ttarā</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938 #N">balavanto</rdg>
+    <rdg wit="#Kac">balattarā</rdg>
+  </app>
+  <app loc="339,351">
+    <rdgGrp type="lemma" select="#Kpc #N">
+      <lem>uttarottaraś</lem>
+      <rdg type="minor" wit="#N">uttarottara<unclear>s</unclear></rdg>
+    </rdgGrp>
+    <rdgGrp select="#A1938 #H">
+      <rdg type="main">uttarottaraṃ</rdg>
+      <rdg type="minor" wit="#H">uttarottarañ</rdg>
+    </rdgGrp>
+    <rdg wit="#Kac">uttarotta</rdg>
+  </app>
+  <app loc="351,361">
+    <rdgGrp type="lemma" select="#Kpc #N #H">
+      <lem>ca prāṇinām</lem>
+      <rdg type="minor" wit="#N #H">ca prāṇināṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">ca sarvaprāṇināṃ</rdg>
+    <rdg wit="#Kac">raāś ca prāṇinām</rdg>
+  </app>
+  <app loc="366,376">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>parihīyate</lem>
+      <rdg type="minor" wit="#N">parihī<lb n="6"/>yate</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">upahīyate ||7||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.8" source="alignments/SS.1.6.8.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,7">
+    <rdgGrp type="lemma" select="#A1938 #N #H">
+      <lem> bhavati</lem>
+      <rdg type="minor" wit="#N">
+        <abbr type="suspension">
+          <unclear>bha</unclear>
+        </abbr>
+        <expan>bhavati </expan>
+      </rdg>
+      <rdg type="minor" wit="#H">
+        <abbr type="suspension">bha</abbr>
+        <expan>bhavati </expan>
+      </rdg>
+    </rdgGrp>
+    <rdg wit="#K"/>
+  </app>
+  <app loc="7,12">
+    <rdgGrp type="lemma" select="#A1938 #N #H">
+      <lem>cātra</lem>
+      <rdg type="minor" wit="#N #H">
+        <expan>cātra</expan>
+      </rdg>
+    </rdgGrp>
+    <rdg wit="#K"/>
+  </app>
+  <app loc="14,19">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>somaḥ</lem>
+      <rdg type="minor" wit="#K"><abbr type="suspension">bha</abbr><ex>bhavati cātra</ex> || <caesura/> somaḥ</rdg>
+      <rdg type="minor" wit="#H"><caesura/> somaḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938"><caesura/> śītāṃśuḥ</rdg>
+    <rdg wit="#N"><caesura/> somaṃ</rdg>
+  </app>
+  <app loc="19,28">
+    <lem wit="#N #H">kledayate</lem>
+    <rdg wit="#A1938">kledayatyu</rdg>
+    <rdg wit="#K">kloda<cb/>yate</rdg>
+  </app>
+  <app loc="28,34">
+    <lem wit="#K">bhūmiṃ</lem>
+    <rdg wit="#A1938">rvīṃ vi</rdg>
+    <rdg wit="#N">bhūmi</rdg>
+    <rdg wit="#H"><unclear>bhū</unclear>mīṃ</rdg>
+  </app>
+  <app loc="34,40">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>sūryaḥ</lem>
+      <rdg type="minor" wit="#H"><unclear>sū</unclear>ryaḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">vasvā</rdg>
+  </app>
+  <app loc="40,48">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>śoṣayate</lem>
+      <rdg type="minor" wit="#Hac">śo<lb n="2"/><!-- few words are added and erased by the scribe -->ṣayate</rdg>
+      <rdg type="minor" wit="#Hpc">śo<lb n="2"/><unclear n="1" unit="char"/><!-- few words are added and erased by the scribe -->ṣayate</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">n śoṣayatya</rdg>
+  </app>
+  <app loc="48,57">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>punaḥ | tāv</lem>
+      <rdg type="minor" wit="#K #N #H">punaḥ | <caesura/> tāv</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">pi | <caesura/> tāv</rdg>
+  </app>
+  <app loc="87,93">
+    <lem wit="#A1938 #K #H">prajāḥ</lem>
+    <rdg wit="#N">pajaḥ ||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.9" source="alignments/SS.1.6.9.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <listApp type="omissions">
+    <app loc="50,145">
+      <lem>dve… te</lem>
+      <rdg wit="#A1938"/>
+    </app>
+    <app loc="50,148">
+      <lem>dve… pañ</lem>
+      <rdg wit="#Kac"/>
+    </app>
+  </listApp>
+  <app loc="4,14">
+    <lem wit="#K #N #H">khalv ayane</lem>
+    <rdg wit="#A1938">khalv ayane dve</rdg>
+  </app>
+  <app loc="14,31">
+    <lem wit="#A1938 #H">yugapat saṃvatsaro</lem>
+    <rdg wit="#Kac">yugapat samvasaro</rdg>
+    <rdg wit="#Kpc">yugapat samvatsasaro</rdg>
+    <rdg wit="#N">yugapat samvaro</rdg>
+  </app>
+  <app loc="31,44">
+    <lem wit="#Kpc #N #H">bhavati | te dve</lem>
+    <rdg wit="#A1938 #Kac">bhavati | te</rdg>
+  </app>
+  <app loc="49,65">
+    <rdgGrp type="lemma" select="#Kpc">
+      <lem>varṣasaṃvatsaraḥ</lem>
+      <rdg type="minor" wit="#Kpc">varṣasamvatsaraḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#N">varṣasamvaraḥ</rdg>
+    <rdg wit="#H">varṣaḥ saṃvatsaraḥ</rdg>
+  </app>
+  <app loc="77,88">
+    <rdgGrp type="lemma" select="#Kpc">
+      <lem>iḍāvatsaraḥ</lem>
+      <rdg type="minor" wit="#Kpc">i<unclear>ḍā</unclear>vatsaraḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#N">ito vatsaraḥ <unclear>ita</unclear> vatsaraḥ</rdg>
+    <rdg wit="#Hac">iḍā vatsaraḥ | i<unclear>ḍ</unclear>vatsa<lb n="3"/><!-- could not ascertain the place of addition -->raḥ |</rdg>
+    <rdg wit="#Hpc">iḍā vatsaraḥ | i<unclear>ḍ</unclear>vatsa<lb n="3"/>ḍo<!-- could not ascertain the place of addition -->raḥ |</rdg>
+  </app>
+  <app loc="107,112">
+    <rdgGrp type="lemma" select="#Kpc #H">
+      <lem>pañca</lem>
+      <rdg type="minor" wit="#Kpc">pa<unclear>ñca<!--Same additional line is also given at below margin but it is unclear. So, I've transcribed above margin line which is probably by some different hand. Curvers of consonants and vowels matches with NAK 5-333 e.g. a, ñca, sa etc. --></unclear></rdg>
+    </rdgGrp>
+    <rdg wit="#N"><unclear>va</unclear>ñca</rdg>
+  </app>
+  <app loc="112,123">
+    <rdgGrp type="lemma" select="#N #H">
+      <lem>varṣāṇi || te</lem>
+      <rdg type="minor" wit="#N #H">varṣāṇi | te</rdg>
+    </rdgGrp>
+    <rdg wit="#Kpc">varṣāni || te</rdg>
+  </app>
+  <app loc="136,143">
+    <rdgGrp type="lemma" select="#A1938 #N">
+      <lem>saṃjñāṃ</lem>
+      <rdg type="minor" wit="#A1938">sañjñāṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#K #H">saṃjñā</rdg>
+  </app>
+  <app loc="156,165">
+    <lem wit="#A1938 #K #H">nimeṣādir</lem>
+    <rdg wit="#N">nimeṣādi</rdg>
+  </app>
+  <app loc="206,215">
+    <lem wit="#K #N #H">kālacakra</lem>
+    <rdg wit="#A1938">kālacakram</rdg>
+  </app>
+  <app loc="218,224">
+    <lem wit="#K #N #H">ucyate</lem>
+    <rdg wit="#A1938">ucyata ity eke ||9||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.9.add" source="alignments/SS.1.6.9.add.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="4,15">
+    <rdgGrp type="lemma" select="#K #N #Hac">
+      <lem>dakṣiṇāyane</lem>
+      <rdg type="minor" wit="#Hac">dakṣiṇāya<lb n="4"/><!-- could not ascertain the place of addition -->ne</rdg>
+    </rdgGrp>
+    <rdg wit="#Hpc">dakṣiṇāya<lb n="4"/>e<!-- could not ascertain the place of addition -->ne</rdg>
+  </app>
+  <app loc="15,21">
+    <lem wit="#K #H">rātrir</lem>
+    <rdg wit="#N">rātri</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.10" source="alignments/SS.1.6.10.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="5,44">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>varṣāśaraddhemantavasantagrīṣmaprāvṛṣaḥ</lem>
+      <rdg type="minor" wit="#K">varṣāśaraddhema<cb/>ntavasantagrīṣmaprāvṛṣaḥ</rdg>
+      <rdg type="minor" wit="#H">varṣāśaraddhemantavasantagrīṣmaprāvṛ<unclear extent="1" unit="char"/><cb/>ṣaḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#N">varṣāsaraddhema<cb/>ntavasantagrīṣmaprāvṛṣaḥ</rdg>
+  </app>
+  <app loc="61,98">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>doṣopacayaprakopapraśamanimittaṃ | te tu</lem>
+      <rdg type="minor" wit="#K">doṣopacayaprakopapraśamanimittaṃ | <unclear reason="torn">te tu </unclear></rdg>
+      <rdg type="minor" wit="#H">doṣopacayaprakopapraśa<unclear>ma</unclear>nimittaṃ | te tu</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">doṣopacayaprakopopaśamanimittaṃ; te tu</rdg>
+    <rdg wit="#N">doṣopacayaprakopaprasamanimittaṃ te tu</rdg>
+  </app>
+  <app loc="98,113">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>bhādrapadādyair</lem>
+      <rdg type="minor" wit="#K"><unclear reason="torn">bhādra</unclear><lb n="7"/>padādyair</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">bhādrapadādyena</rdg>
+    <rdg wit="#N">bhadrapadā<unclear>kṣmi</unclear></rdg>
+  </app>
+  <app loc="122,128">
+    <lem wit="#K #N #H">naivaṃ</lem>
+    <rdg wit="#A1938">na</rdg>
+  </app>
+  <app loc="139,147">
+    <lem wit="#K #H">tadyathā</lem>
+    <rdgGrp select="#A1938 #N">
+      <rdg type="main">tad yathā</rdg>
+      <rdg type="minor" wit="#A1938">tad yathā-</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="148,166">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>bhadrapadāśvayujau</lem>
+      <rdg type="minor" wit="#K">bhadrapadāśvayu<cb/>jau</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">bhādrapadāśvayujau</rdg>
+    <rdg wit="#N"><unclear>ru</unclear>drapadās ca <unclear ana="maybe yu" cert="low">ṣu</unclear>je</rdg>
+  </app>
+  <app loc="217,232">
+    <lem wit="#A1938 #K #H">phālgunacaitrau</lem>
+    <rdg wit="#N">phālgu<pb ana="A 1267_11_06.jpg" facs="7" n="6r"/>ṇacaitrau</rdg>
+  </app>
+  <app loc="232,240">
+    <lem wit="#A1938 #K #H">vasantaḥ</lem>
+    <rdg wit="#N"/>
+  </app>
+  <app loc="241,257">
+    <lem wit="#A1938 #K #H">vaiśākhajyeṣṭhau</lem>
+    <rdg wit="#N">vaiśākhajeṣṭa</rdg>
+  </app>
+  <app loc="257,264">
+    <lem wit="#A1938 #K #H">grīṣmaḥ</lem>
+    <rdg wit="#N">v<gap n="7" reason="saut du même au même" unit="char" quantity="1"/></rdg>
+  </app>
+  <app loc="265,279">
+    <lem wit="#A1938 #K #H">āṣāḍhaśrāvaṇau</lem>
+    <rdg wit="#N"/>
+  </app>
+  <app loc="279,288">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>prāvṛḍ iti</lem>
+      <rdg type="minor" wit="#A1938">prāvṛḍiti</rdg>
+      <rdg type="minor" wit="#K">prāvṛḍ iti<cb n="1"/></rdg>
+      <rdg type="minor" wit="#H">prāvṛḍ i<lb n="6"/>ti</rdg>
+    </rdgGrp>
+    <rdg wit="#N"/>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.11" source="alignments/SS.1.6.11.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <listApp type="omissions">
+    <app loc="807,950">
+      <lem>tatra… sū</lem>
+      <rdg wit="#Hac"/>
+    </app>
+    <app loc="807,950">
+      <lem>tatra… sū</lem>
+      <rdg wit="#Hpc"/>
+    </app>
+    <app loc="43,75">
+      <lem>āhāratvam… ā</lem>
+      <rdg wit="#A1938"/>
+    </app>
+    <app loc="807,950">
+      <lem>tatra… sū</lem>
+      <rdg wit="#A1938"/>
+    </app>
+    <app loc="807,950">
+      <lem>tatra… sū</lem>
+      <rdg wit="#N"/>
+    </app>
+  </listApp>
+  <app loc="0,5">
+    <lem wit="#A1938 #K #H"> tatra</lem>
+    <rdg wit="#N"/>
+  </app>
+  <app loc="5,12">
+    <lem wit="#K #H">varṣāsv</lem>
+    <rdg wit="#A1938">varṣāsvo</rdg>
+    <rdg wit="#N">
+      <gap n="5" reason="saut du même au même" unit="char" quantity="1"/>
+    </rdg>
+  </app>
+  <app loc="12,21">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>auṣadhyas</lem>
+      <rdg type="minor" wit="#N"><gap n="5" reason="saut du même au même" unit="char" quantity="1"/>auṣadhyas</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">ṣadhaya</rdg>
+  </app>
+  <app loc="21,28">
+    <lem wit="#K #N #H">taruṇyo</lem>
+    <rdg wit="#A1938">staruṇyo</rdg>
+  </app>
+  <app loc="28,37">
+    <lem wit="#A1938 #H">'lpavīryā</lem>
+    <rdgGrp select="#K #N">
+      <rdg type="main">lpavīryā</rdg>
+      <rdg type="minor" wit="#N">lpavīryā'</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="68,79">
+    <lem wit="#A1938 #K #N">cāpraśāntāḥ</lem>
+    <rdg wit="#H">cāprasannāḥ</rdg>
+  </app>
+  <app loc="79,94">
+    <lem>kṣitimalaprāyās</lem>
+    <rdg wit="#A1938">kṣitimalaprāyāḥ, tā</rdg>
+    <rdgGrp select="#K #H #N">
+      <rdg type="main">kṣitimalaprāyās tās</rdg>
+      <rdg type="minor" wit="#N">kṣitimala<cb/>prāyās tās</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="94,110">
+    <rdgGrp type="lemma" select="#K">
+      <lem>tās tūpayujyamānā</lem>
+      <rdg type="minor" wit="#K">tās tūpayu<cb n="2"/>jyamānā</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">upayujyamānā</rdg>
+    <rdg wit="#N #H">tūpayujyamānā</rdg>
+  </app>
+  <app loc="150,163">
+    <lem wit="#A1938 #K #N">klinnadehānāṃ</lem>
+    <rdg wit="#H"><gap n="7" unit="char" quantity="1"/><unclear extent="1" unit="char"/><gap n="1" unit="char" quantity="1"/> klinnadehānān</rdg>
+  </app>
+  <app loc="163,170">
+    <lem wit="#K #N #H">dehināṃ</lem>
+    <rdg wit="#A1938">prāṇināṃ</rdg>
+  </app>
+  <app loc="170,200">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>śītavātavarṣaviṣṭambhitāgnīnāṃ</lem>
+      <rdg type="minor" wit="#K">śīta<pc> </pc>vāta<pc> </pc>varṣa<pc> </pc><lb n="2"/>viṣṭambhitāgnīnāṃ</rdg>
+      <rdg type="minor" wit="#H">śīta<pc> </pc>vāta<pc> </pc>varṣa<pc> </pc>viṣṭambhitāgnīnāṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">śītavātaviṣṭambhitāgnīnāṃ</rdg>
+    <rdg wit="#N">śīta<pc> </pc>vāta<pc> </pc>varṣa<pc> </pc>vi<unclear>staṃ</unclear>bhitāgnī|<cb/>nāṃ</rdg>
+  </app>
+  <app loc="200,213">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>vidahyante | sa</lem>
+      <rdg type="minor" wit="#H">vidahyante | <unclear>sa</unclear></rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">vidahyante,</rdg>
+  </app>
+  <app loc="213,233">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>vidāhāt pittasañcayam</lem>
+      <rdg type="minor" wit="#N">vidāhāt | pittasañcayam</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">vidāhāt pittasañcaya</rdg>
+  </app>
+  <app loc="233,246">
+    <lem wit="#K #N #H">āpādayanti | sa</lem>
+    <rdg wit="#A1938">māpādayanti; sa</rdg>
+  </app>
+  <app loc="254,260">
+    <rdgGrp type="lemma" select="#A1938 #K #N #Hpc">
+      <lem>śaradi</lem>
+      <rdg type="minor" wit="#K">śaradi<cb n="1"/></rdg>
+      <rdg type="minor" wit="#Hpc"><unclear>śa</unclear>radi</rdg>
+    </rdgGrp>
+    <rdg wit="#Hac"><unclear>śa</unclear>raidi</rdg>
+  </app>
+  <app loc="260,274">
+    <lem wit="#A1938 #K">praviralameghe</lem>
+    <rdg wit="#N">praviralamegha</rdg>
+    <rdg wit="#H"><unclear>pra</unclear>viralameṇa</rdg>
+  </app>
+  <app loc="274,280">
+    <lem wit="#A1938 #K">viyaty</lem>
+    <rdg wit="#N"><unclear>dipa</unclear> <lb n="2"/>ty</rdg>
+    <rdg wit="#H">vi<lb n="2"/><unclear>la</unclear>yaty</rdg>
+  </app>
+  <app loc="280,290">
+    <lem wit="#A1938 #K #H">upaśuṣyati</lem>
+    <rdg wit="#N">upaśuśyati</rdg>
+  </app>
+  <app loc="290,295">
+    <lem wit="#A1938 #K #N">paṅke</lem>
+    <rdg wit="#H">paṅkā</rdg>
+  </app>
+  <app loc="295,317">
+    <lem wit="#A1938">'rkakiraṇapravilāyitaḥ</lem>
+    <rdg wit="#K #H">rka<pc> </pc>kiraṇa<pc> </pc>pravilāyitaḥ</rdg>
+    <rdg wit="#N">'rka<pc> </pc>kiraṇa<pc> </pc>pravilāpitaḥ</rdg>
+  </app>
+  <app loc="317,326">
+    <lem wit="#K">paittikāṃ</lem>
+    <rdg wit="#A1938 #H">paittikā</rdg>
+    <rdg wit="#N">pittaikāṃ</rdg>
+  </app>
+  <app loc="326,333">
+    <lem wit="#K #N">vyādhīṃ</lem>
+    <rdg wit="#A1938">n vyādhīñ</rdg>
+    <rdg wit="#H">n<cb/> vyādhī</rdg>
+  </app>
+  <app loc="333,344">
+    <lem wit="#A1938 #K #N">janayati | tā</lem>
+    <rdg wit="#H">n janayati | tā</rdg>
+  </app>
+  <app loc="344,356">
+    <lem wit="#A1938 #N #H">evauṣadhayaḥ</lem>
+    <rdg wit="#K">evauṣadhyaḥ</rdg>
+  </app>
+  <app loc="398,406">
+    <lem wit="#K #H">bhavanti</lem>
+    <rdg wit="#A1938">bhavan</rdg>
+    <rdg wit="#N">bhavati |</rdg>
+  </app>
+  <app loc="407,413">
+    <lem wit="#K #N #H">āpaś ca</lem>
+    <rdg wit="#A1938">tyāpaś ca</rdg>
+  </app>
+  <app loc="413,422">
+    <lem wit="#A1938 #K #H">praśāntāḥ</lem>
+    <rdg wit="#N">prasāntāḥ</rdg>
+  </app>
+  <app loc="438,447">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>gurvyas tā</lem>
+      <rdg type="minor" wit="#K"><unclear reason="torn">gurvya</unclear><lb n="3"/>s tā</rdg>
+      <rdg type="minor" wit="#H">gurvvyas tā</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">gurvyāśca, tā</rdg>
+    <rdg wit="#N">guruvyas tā</rdg>
+  </app>
+  <app loc="481,508">
+    <rdgGrp type="lemma" select="#K">
+      <lem>satuṣāraupaṣṭambhitadehānāṃ</lem>
+      <rdg type="minor" wit="#K">satuṣāraupa<pc> </pc>ṣṭambhita<pc> </pc>dehānāṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">satuṣārapavanopastambhitadehānāṃ</rdg>
+    <rdgGrp select="#N #H">
+      <rdg type="main">satuṣāropaṣṭambhitadehānāṃ</rdg>
+      <rdg type="minor" wit="#N">satuṣāropa<pc> </pc>ṣṭambhita<pc> </pc>dehānāṃ</rdg>
+      <rdg type="minor" wit="#H">satuṣāropa<pc> </pc>ṣṭaṃbhita<pc> </pc>dehānān</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="508,515">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>dehinām</lem>
+      <rdg type="minor" wit="#N">dehināṃm</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">dehinā</rdg>
+  </app>
+  <app loc="515,525">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>avidagdhāḥ</lem>
+      <rdg type="minor" wit="#K">avidagdhāḥ<cb n="1"/></rdg>
+      <rdg type="minor" wit="#H">avida<unclear>gdh</unclear>āḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">mavidagdhāḥ</rdg>
+  </app>
+  <app loc="525,552">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>snehād gauravād upalepitvāc ca</lem>
+      <rdg type="minor" wit="#H">snehād gauravād upalepi<lb n="4"/>tvāc ca</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">snehācchaityād gauravād upalepāc ca</rdg>
+    <rdg wit="#N">sehād gauravād upalepitvāc ca</rdg>
+  </app>
+  <app loc="552,561">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>śleṣmaṇas</lem>
+      <rdg type="minor" wit="#H">śleṣmaṇaḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">śleṣma</rdg>
+  </app>
+  <app loc="561,569">
+    <lem wit="#K #N #H">sañcayam</lem>
+    <rdg wit="#A1938">sañcaya</rdg>
+  </app>
+  <app loc="569,582">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>āpādayanti | sa</lem>
+      <rdg type="minor" wit="#N">āpā<lb n="3"/>dayanti | sa</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">māpādayanti; sa</rdg>
+  </app>
+  <app loc="596,618">
+    <lem>'rkakiraṇapravilāyitaḥ</lem>
+    <rdg wit="#A1938">'rkaraśmipravilāyita</rdg>
+    <rdg wit="#K">rka<pc> </pc>kiraṇa<pc> </pc>pravilāyitaḥ</rdg>
+    <rdg wit="#N">rka<pc> </pc>kiraṇa<pc> </pc>pra</rdg>
+    <rdg wit="#H">'<cb/>rkka<pc> </pc>kiraṇa<pc> </pc>pravilā</rdg>
+  </app>
+  <app loc="618,634">
+    <rdgGrp type="lemma" select="#K">
+      <lem>śleṣmikāṃ vyādhīṃ</lem>
+      <rdg type="minor" wit="#K">śleṣmikāṃ vyādhīṃ<cb n="2"/></rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">īṣatstabdhadehānāṃ dehināṃ ślaiṣmikān vyādhīñ</rdg>
+    <rdg wit="#N">lāpitaḥ śleṣmikān vyādhīṃ</rdg>
+    <rdg wit="#H">pitaḥ śleṣmikān vyādhī</rdg>
+  </app>
+  <app loc="634,645">
+    <lem wit="#A1938 #K #N">janayati | tā</lem>
+    <rdg wit="#H">n janayati | tā</rdg>
+  </app>
+  <app loc="645,669">
+    <lem wit="#K">evauṣadhyau grīṣmaniḥsārā</lem>
+    <rdg wit="#A1938">evauṣadhayo nidāghe niḥsārā</rdg>
+    <rdgGrp select="#N #H">
+      <rdg type="main">evauṣadhyo grīṣmaniḥsārā</rdg>
+      <rdg type="minor" wit="#N">evauṣadhyo grīṣmani<cb/>ḥsārā</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="674,689">
+    <lem wit="#K #N #H">atimātralaghvyo</lem>
+    <rdg wit="#A1938">atimātraṃ laghvyo</rdg>
+  </app>
+  <app loc="689,696">
+    <lem wit="#K #H">bhavaty</lem>
+    <rdg wit="#A1938">bhavan</rdg>
+    <rdg wit="#N">bhavanty</rdg>
+  </app>
+  <app loc="696,704">
+    <lem wit="#K #H">āpaś ca tā</lem>
+    <rdg wit="#A1938">tyāpaśca, tā</rdg>
+    <rdg wit="#N">āpaś ca</rdg>
+  </app>
+  <app loc="872,879">
+    <lem wit="#A1938 #K #H">dehināṃ</lem>
+    <rdg wit="#N">dehinā</rdg>
+  </app>
+  <app loc="879,897">
+    <rdgGrp type="lemma" select="#K">
+      <lem>raukṣyāl laghavāc ca</lem>
+      <rdg type="minor" wit="#K">raukṣyāl la<unclear>gha</unclear>vāc ca</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">raukṣyāllaghutvāc ca</rdg>
+    <rdg wit="#N"><unclear>rokṣyā</unclear><cb/> lāghavāc ca</rdg>
+    <rdg wit="#H">raukṣyāl lāghavāc ca</rdg>
+  </app>
+  <app loc="897,902">
+    <lem wit="#A1938 #K #H">vāyoḥ</lem>
+    <rdg wit="#N">yoḥ</rdg>
+  </app>
+  <app loc="902,910">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>sañcayam</lem>
+      <rdg type="minor" wit="#K">sañca<cb n="2"/>yam</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">sañcaya</rdg>
+  </app>
+  <app loc="910,923">
+    <lem wit="#K #N #H">āpādayanti | sa</lem>
+    <rdg wit="#A1938">māpādayanti; sa</rdg>
+  </app>
+  <app loc="938,949">
+    <lem wit="#K">cātyarthaṃñ</lem>
+    <rdgGrp select="#A1938 #H">
+      <rdg type="main">cātyarthaṃ</rdg>
+      <rdg type="minor" wit="#H">cā<lb n="6"/>tyarthañ</rdg>
+    </rdgGrp>
+    <rdg wit="#N">cātyartha</rdg>
+  </app>
+  <app loc="970,987">
+    <rdgGrp type="lemma" select="#K #N">
+      <lem>cātiklinnadehānāṃ</lem>
+      <rdg type="minor" wit="#K"><unclear>cā</unclear>tiklinnadehā<lb n="5"/>nāṃ</rdg>
+      <rdg type="minor" wit="#N">cā<unclear>ti</unclear><lb n="4"/>klinnadehānāṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">klinnadehānāṃ</rdg>
+    <rdg wit="#H">yāti klinnadehānān</rdg>
+  </app>
+  <app loc="994,1011">
+    <lem wit="#A1938 #K #H">śītavātavarṣerito</lem>
+    <rdg wit="#N">sītavātavarṣerito</rdg>
+  </app>
+  <app loc="1011,1033">
+    <lem wit="#H">vātikān vyādhīn janayati</lem>
+    <rdg wit="#A1938">vātikān vyādhīñjanayati |</rdg>
+    <rdg wit="#K">vātikāṃ vyādhīṃñ janayati |</rdg>
+    <rdg wit="#N">vātikāṃ vyādhīṇ janayati |</rdg>
+  </app>
+  <app loc="1038,1042">
+    <lem wit="#K #N">eṣāṃ</lem>
+    <rdg wit="#A1938">eṣa</rdg>
+    <rdg wit="#H">eṣan</rdg>
+  </app>
+  <app loc="1068,1073">
+    <lem wit="#A1938 #K #N">uktaḥ</lem>
+    <rdg wit="#H">uktāḥ ||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.12" source="alignments/SS.1.6.12.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="5,25">
+    <lem wit="#A1938 #K">varṣāhemantagrīṣmeṣu</lem>
+    <rdgGrp select="#N #H">
+      <rdg type="main">varśāhemantagrīṣmeṣu</rdg>
+      <rdg type="minor" wit="#H">varśāhemanta<pb ana="dscn2988 fol 012.jpg upper" facs="14" n="12v"/><lb n="1"/>grīṣmeṣu</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="42,64">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>śaradvasantaprāvṛṭsu ca</lem>
+      <rdg type="minor" wit="#K #H">śaradvasantaprāvṛ<unclear>ṭsu</unclear> ca</rdg>
+    </rdgGrp>
+    <rdg wit="#N">śaraddhemantaprāvṛṭsu ca</rdg>
+  </app>
+  <app loc="64,76">
+    <lem wit="#A1938 #K #H">prakupitānāṃ</lem>
+    <rdg wit="#N">prakupitānā</rdg>
+  </app>
+  <app loc="76,86">
+    <lem wit="#K #N #H">nirharaṇaṃ</lem>
+    <rdg wit="#A1938">nirharaṇaṃ kartavyam ||12||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.13" source="alignments/SS.1.6.13.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="5,16">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>paittikānāṃ</lem>
+      <rdg type="minor" wit="#K">paitti<cb n="2"/>kānāṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#N">paitikānāṃ</rdg>
+  </app>
+  <app loc="25,32">
+    <lem wit="#K #N #H">hemante</lem>
+    <rdg wit="#A1938">upaśamo hemante,</rdg>
+  </app>
+  <app loc="32,42">
+    <lem wit="#K #H">vyupaśamaḥ</lem>
+    <rdg wit="#A1938"/>
+    <rdg wit="#N">
+      <unclear>vyuṣesamaḥ</unclear>
+    </rdg>
+  </app>
+  <app loc="43,54">
+    <rdgGrp type="lemma" select="#K">
+      <lem>śleṣmikāṇāṃ</lem>
+      <rdg type="minor" wit="#K">śleṣmikāṇān</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">ślaiṣmikāṇāṃ</rdg>
+    <rdg wit="#N #H">ślaiṣmikānāṃ</rdg>
+  </app>
+  <app loc="77,88">
+    <lem wit="#K #H">svabhāvatas</lem>
+    <rdg wit="#A1938">svabhāvata</rdg>
+    <rdg wit="#N">svabhāva</rdg>
+  </app>
+  <app loc="88,93">
+    <rdgGrp type="lemma" select="#K #Hac">
+      <lem>tv ete</lem>
+      <rdg type="minor" wit="#K">tv e<lb n="6"/>te</rdg>
+      <rdg type="minor" wit="#Hac">tv e<lb n="2"/><!-- did not find the place of addition -->te</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">eva; ta ete</rdg>
+    <rdg wit="#N">ta <unclear>srve</unclear>te</rdg>
+    <rdg wit="#Hpc">tv e<lb n="2"/>ḍo<!-- did not find the place of addition -->te</rdg>
+  </app>
+  <app loc="93,111">
+    <lem wit="#K">sañcayaprakopaśamā</lem>
+    <rdg wit="#A1938 #N #H">sañcayaprakopopaśamā</rdg>
+  </app>
+  <app loc="111,121">
+    <lem wit="#A1938 #K #N">vyākhyātāḥ</lem>
+    <rdg wit="#H">khyātāḥ ||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.14" source="alignments/SS.1.6.14.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="5,19">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>divasapūrvāhṇe</lem>
+      <rdg type="minor" wit="#H">divasa pūrvvāhṇe</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">pūrvāhṇe</rdg>
+  </app>
+  <app loc="19,32">
+    <lem wit="#K #N">vasantaliṅgaṃ</lem>
+    <rdgGrp select="#A1938 #H">
+      <rdg type="main">vasantasya liṅgaṃ</rdg>
+      <rdg type="minor" wit="#A1938">vasantasya liṅgaṃ,</rdg>
+      <rdg type="minor" wit="#H">vasanta<cb/>sya liṅgaṃ |</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="60,72">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>prāvṛḍliṅgaṃ</lem>
+      <rdg type="minor" wit="#H">prāvṛḍliṇgaṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">prāvṛṣaḥ ,</rdg>
+    <rdg wit="#N">prāvṛḍliṃga |</rdg>
+  </app>
+  <app loc="73,80">
+    <lem wit="#A1938 #K #H">pradoṣe</lem>
+    <rdg wit="#N">ma<unclear>hau</unclear>ṣe</rdg>
+  </app>
+  <app loc="80,88">
+    <lem wit="#A1938 #K">vārṣikaṃ</lem>
+    <rdg wit="#N #H">vārṣikāṃ |</rdg>
+  </app>
+  <app loc="89,96">
+    <lem wit="#A1938 #K #H">śāradam</lem>
+    <rdg wit="#N">sāradam</rdg>
+  </app>
+  <app loc="107,117">
+    <rdgGrp type="lemma" select="#A1938 #K">
+      <lem>pratyuṣasi</lem>
+      <rdg type="minor" wit="#K">pra<unclear>tyu</unclear>ṣasi</rdg>
+    </rdgGrp>
+    <rdg wit="#N">pra<unclear>tyā</unclear>ṣasi</rdg>
+    <rdg wit="#Hac">pra<unclear>tyu</unclear>ṣa<lb n="3"/><!-- place of addition not known -->mi</rdg>
+    <rdg wit="#Hpc">pra<unclear>tyu</unclear>ṣa<lb n="3"/>dvi<!-- place of addition not known -->si</rdg>
+  </app>
+  <app loc="117,125">
+    <lem wit="#K">haimanam</lem>
+    <rdg wit="#A1938">haimantam</rdg>
+    <rdg wit="#N">hemanam</rdg>
+    <rdg wit="#H">hemantam</rdg>
+  </app>
+  <app loc="162,199">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>śītoṣṇavarṣadoṣopacayaprakopopaśamair</lem>
+      <rdg type="minor" wit="#N">śīto<unclear>ṣṇa</unclear>varṣadoṣopacayaprakopopaśamair</rdg>
+      <rdg type="minor" wit="#H">śīto<cb/>ṣṇavarṣadoṣopacayaprakopopaśamair</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">śītoṣṇavarṣalakṣaṇaṃ doṣopacayaprakopopaśamair</rdg>
+  </app>
+  <app loc="199,206">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>jānīyāt</lem>
+      <rdg type="minor" wit="#H">jjānīyāt</rdg>
+    </rdgGrp>
+    <rdg wit="#N"><unclear>ja</unclear>nīyāt ||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.15" source="alignments/SS.1.6.15.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,20">
+    <lem> tatrāvyāpanneṣv ṛtuṣv</lem>
+    <rdg wit="#A1938">tatra, avyāpanneṣu ṛtuṣv</rdg>
+    <rdg wit="#K">tatrāvyāpane<unclear extent="3" unit="syllables"/><lb n="7"/>tuṣv</rdg>
+    <rdg wit="#N">tatrāvyāpannesv ṛtuṣv</rdg>
+    <rdg wit="#H">tatra vyāpanneṣv ṛtuṣv</rdg>
+  </app>
+  <app loc="45,55">
+    <lem wit="#K">āpaś ca | tās</lem>
+    <rdgGrp select="#A1938 #N">
+      <rdg type="main">āpaś ca tā</rdg>
+      <rdg type="minor" wit="#A1938">āpaś ca; tā</rdg>
+      <rdg type="minor" wit="#N">āpaś ca | tā</rdg>
+    </rdgGrp>
+    <rdg wit="#H">āpaś ca | tāṃ</rdg>
+  </app>
+  <app loc="55,71">
+    <lem wit="#K">tūpayayujyamānāḥ</lem>
+    <rdgGrp select="#A1938 #N">
+      <rdg type="main">upayujyamānāḥ</rdg>
+      <rdg type="minor" wit="#N"><unclear>u</unclear>payujyamānāḥ</rdg>
+    </rdgGrp>
+    <rdg wit="#H">tūpayujyamānāḥ</rdg>
+  </app>
+  <app loc="71,97">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>prāṇāyurbalavīryaujaskaryo</lem>
+      <rdg type="minor" wit="#K"><unclear reason="torn">prāṇāyu</unclear>rbalavīryaujaskaryo<cb/></rdg>
+      <rdg type="minor" wit="#H">prāṇāyurbbalavīryaujaskaryo</rdg>
+    </rdgGrp>
+    <rdg wit="#N">prāṇāyubalavīryaujaskaryo</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.16" source="alignments/SS.1.6.16.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,5">
+    <rdgGrp type="lemma" select="#K #Hpc">
+      <lem> tāsām</lem>
+      <rdg type="minor" wit="#Hpc">tāsāṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938 #N">teṣāṃ</rdg>
+    <rdg wit="#Hac">tāmāṃ</rdg>
+  </app>
+  <app loc="5,10">
+    <lem wit="#K #N #H">punar</lem>
+    <rdg wit="#A1938">puna</rdg>
+  </app>
+  <app loc="10,17">
+    <rdgGrp type="lemma" select="#N #H">
+      <lem>vyāpado</lem>
+      <rdg type="minor" wit="#N">vyāpado<cb/></rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">rvyāpado</rdg>
+    <rdg wit="#K">vyapado</rdg>
+  </app>
+  <app loc="17,31">
+    <lem>'dṛṣṭakāritāni</lem>
+    <rdg wit="#A1938">'dṛṣṭakāritāḥ,</rdg>
+    <rdg wit="#K #H">dṛṣṭakāritāni</rdg>
+    <rdg wit="#N">dṛṣtakāritāni</rdg>
+  </app>
+  <app loc="31,49">
+    <lem wit="#A1938 #Kpc">śītoṣṇavātavarṣāṇi</lem>
+    <rdg wit="#Kac">śītoṣṇavarṣāṇi |</rdg>
+    <rdgGrp select="#N #H">
+      <rdg type="main">ṣītoṣṇavātavarṣāṇi</rdg>
+      <rdg type="minor" wit="#H">ṣītoṣṇavātavarṣāṇi |</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="55,65">
+    <lem wit="#K #N #H">viparītāny</lem>
+    <rdg wit="#A1938">viparītānyo</rdg>
+  </app>
+  <app loc="65,73">
+    <lem wit="#K #H">auṣadhīr</lem>
+    <rdg wit="#A1938">ṣadhī</rdg>
+    <rdg wit="#N">auṣadhī</rdg>
+  </app>
+  <app loc="73,85">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>vyāpādayanty</lem>
+      <rdg type="minor" wit="#H">vyāpāda<lb n="5"/>yanty</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">rvyāpādayantya</rdg>
+  </app>
+  <app loc="85,89">
+    <lem wit="#K #N #H">āpaś</lem>
+    <rdg wit="#A1938">pa</rdg>
+  </app>
+  <app loc="89,91">
+    <lem wit="#K #N #H">ca</lem>
+    <rdg wit="#A1938">śca ||16||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.17" source="alignments/SS.1.6.17.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,5">
+    <rdgGrp type="lemma" select="#A1938 #K #N #Hpc">
+      <lem> tāsām</lem>
+      <rdg type="minor" wit="#K">tāsā<cb/>m</rdg>
+    </rdgGrp>
+    <rdg wit="#Hac">tāmām</rdg>
+  </app>
+  <app loc="43,50">
+    <lem wit="#K #N #H">bhavati</lem>
+    <rdg wit="#A1938">bhaved iti ||17||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.18" source="alignments/SS.1.6.18.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">tatra, avyāpannānām oṣadhīnām apāṃ copayogaḥ ||18||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.19" source="alignments/SS.1.6.19.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <listApp type="omissions">
+    <app loc="0,35">
+      <lem>… kṛtyābhiśā</lem>
+      <rdg wit="#K"/>
+    </app>
+  </listApp>
+  <app loc="0,55">
+    <lem wit="#H"> kadācid avyāpanneṣv api kṛtyābhiśāparakṣaḥkrodhād adharmair</lem>
+    <rdg wit="#A1938">kadācid avyāpanneṣv api ṛtuṣu kṛtyābhiśāparakṣaḥkrodhādharmair</rdg>
+    <rdg wit="#N">kadācid avyāpannāneṣv api kṛtyābhiśāparakṣaḥkrodhād adharmair</rdg>
+  </app>
+  <app loc="55,64">
+    <lem wit="#K #H">uṣasyante</lem>
+    <rdg wit="#A1938">upadhvasyante</rdg>
+    <rdg wit="#N">uṣaṃsyante<lb n="7"/></rdg>
+  </app>
+  <app loc="74,99">
+    <lem wit="#A1938 #K #H">viṣauṣadhipuṣpagandhena vā</lem>
+    <rdg wit="#N"><unclear>viṣoṣadhi</unclear>puṣpagan<unclear>dhena</unclear> vā</rdg>
+  </app>
+  <app loc="99,113">
+    <lem wit="#K #H">vāyunopanītena</lem>
+    <rdg wit="#A1938">vāyunopanītenākramyate yo deśas tatra doṣaprakṛtyaviśeṣeṇa kāsa</rdg>
+    <rdg wit="#N">vāyunopanītena | kā</rdg>
+  </app>
+  <app loc="114,148">
+    <rdgGrp type="lemma" select="#K">
+      <lem>kāsaśvāsapratiśyāyaśirorogajvarair</lem>
+      <rdg type="minor" wit="#K">kāsaśvāsapratiśyāyaśiroroga<cb/>jvarair</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">śvāsavamathupratiśyāyaśirorugjvarair</rdg>
+    <rdg wit="#N">sasvāsapratisyāyaśirorogakṣa<cb/>|rair</rdg>
+    <rdg wit="#H">kāsaśvāsapratisyāyaśirorogajvarair</rdg>
+  </app>
+  <app loc="159,165">
+    <lem wit="#K #H">prajāḥ</lem>
+    <rdg wit="#A1938"/>
+    <rdg wit="#N">pra<unclear>jaḥ</unclear> |</rdg>
+  </app>
+  <app loc="189,253">
+    <rdgGrp type="lemma" select="#K #Hpc">
+      <lem>śayanāsanayānavāhanamaṇiratnopakaraṇagarhitalakṣaṇaprādurbhāvair</lem>
+      <rdg type="minor" wit="#K">śayanāsanayānavāhanama<unclear reason="torn">ṇiratnopa</unclear><lb n="2"/>karaṇagarhitalakṣaṇaprādurbhāvair</rdg>
+      <rdg type="minor" wit="#Hpc">śayanāsanayānavāhanamaṇira<pb ana="dscn2988 fol 012.jpg lower" facs="14" n="13r"/><lb n="1"/>tnopakaraṇagarhitalakṣaṇaprādur<unclear>bhā</unclear>vair</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">gṛhadāraśayanāsanayānavāhanamaṇiratnopakaraṇagarhitalakṣaṇanimittaprādurbhāvair</rdg>
+    <rdg wit="#N">śayanāsanayānavāhanamaṇiratnopakaraṇagarhitalakṣaṇa<unclear>dyādūbhī </unclear></rdg>
+    <rdg wit="#Hac">śayanāmanayānavāhanamaṇira<pb ana="dscn2988 fol 012.jpg lower" facs="14" n="13r"/><lb n="1"/>tnopakaraṇagarhitalakṣaṇaprādur<unclear>bhā</unclear>vair</rdg>
+  </app>
+  <app loc="253,255">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>vā</lem>
+      <rdg type="minor" wit="#H">vvā</rdg>
+    </rdgGrp>
+    <rdg wit="#N">
+      <unclear>varcā</unclear>
+    </rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.20" source="alignments/SS.1.6.20.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,4">
+    <lem wit="#K #H"> jāto</lem>
+    <rdg wit="#A1938"/>
+    <rdg wit="#N">
+      <unclear>jano </unclear>
+    </rdg>
+  </app>
+  <app loc="4,8">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>'tra</lem>
+      <rdg type="minor" wit="#N">
+        <unclear><cb n="3"/>'tra</unclear>
+      </rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">tatra,</rdg>
+  </app>
+  <app loc="9,133">
+    <rdgGrp type="lemma" select="#K #H">
+      <lem>parityāgaśāntiprāyaścittabalimaṅgalajapahomopahārejyāñjalinamaskārataponiyamadayādānadīkṣābhyupagamadevatābrāhmaṇaguruparair</lem>
+      <rdg type="minor" wit="#K">parityāga<pc> </pc>śānti<pc> </pc>prāyaścitta<pc> </pc>bali<pc> </pc>maṅgala<cb/><pc> </pc>japa<pc> </pc>homopahārejyāñjali<pc> </pc>namaskāra<pc> </pc>tapo<pc> </pc>niyama<pc> </pc>dayā<pc> </pc>dāna<pc> </pc>dīkṣābhyupagama<pc> </pc>devatā<pc> </pc>brāhmaṇa<pc> </pc>guru<pc> </pc>parair</rdg>
+      <rdg type="minor" wit="#H">parityāga<pc> </pc>śānti<pc> </pc>prāyaścitta<pc> </pc>bali<pc> </pc>maṅgala<pc> </pc>japa<pc> </pc>homopahārejyāñjali<pc> </pc>namaskāra<pc> </pc>tapo<pc> </pc>niyama<pc> </pc>dayā<pc> </pc>dāna<pc> </pc>dīkṣābhyupaga<lb n="2"/>ma<pc> </pc>devatā<pc> </pc>brāhmaṇa<pc> </pc>guru<pc> </pc>parair</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">sthānaparityāgaśāntikarmaprāyaścittamaṅgalajapahomopahārejyāñjalinamaskārataponiyama- dayādānadīkṣābhyupagamadevatābrāhmaṇaguruparai</rdg>
+    <rdg wit="#N">parityāga<pc> </pc>śānti<pc> </pc>prāyascitta<pc> </pc>vali<pc> </pc>maṅgala<pc> </pc>japa<pc> </pc><unclear>ho</unclear>mopahārejyāñjali<pc> </pc>namaskāra<pc> </pc>tapo<pc> </pc>niyama<pc> </pc><unclear>da</unclear>yā<pc> </pc><pb ana="A 1267_11_08.jpg upper" facs="8" n="7v"/>dāna<pc> </pc>dīkṣābhyupagama<pc> </pc>devatā<pc> </pc>brāhmaṇa<pc> </pc>guru<pc> </pc>parai</rdg>
+  </app>
+  <app loc="133,144">
+    <rdgGrp type="lemma" select="#K #N #H">
+      <lem>bhavitavyam</lem>
+      <rdg type="minor" wit="#H"><unclear>bha</unclear>vitavyam</rdg>
+    </rdgGrp>
+    <rdg wit="#A1938">rbhavitavyam,</rdg>
+  </app>
+  <app loc="144,148">
+    <rdgGrp type="lemma" select="#A1938 #K #N">
+      <lem>evaṃ</lem>
+      <rdg type="minor" wit="#K">e<cb/>vaṃ</rdg>
+    </rdgGrp>
+    <rdg wit="#H">e aṃ</rdg>
+  </app>
+  <app loc="148,153">
+    <lem wit="#A1938 #K">sādhu</lem>
+    <rdg wit="#N #H">sādhur</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.21" source="alignments/SS.1.6.21.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">ata ūrdhvam avyāpannānāmṛtūnāṃ lakṣaṇāny upadekṣyāmaḥ ||21||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.22" source="alignments/SS.1.6.22.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">vāyur vāty uttaraḥ śīto rajodhūmākulā diśaḥ | <caesura/> channastuṣāraiḥ savitā himānaddhā jalāśayāḥ ||22||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.23" source="alignments/SS.1.6.23.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">darpitā dhvāṅkṣakhaṅgāhvamahiṣorabhrakuñjarāḥ | <caesura/> rodhrapriyaṅgupunnāgāḥ puṣpitā himasāhvaye ||23||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.24" source="alignments/SS.1.6.24.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">śiśire śītamadhikaṃ vātavṛṣṭyākulā diśaḥ | <caesura/> śeṣaṃ hemantavat sarvaṃ vijñeyaṃ lakṣaṇaṃ budhaiḥ ||24||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.25" source="alignments/SS.1.6.25.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">siddhavidyādharavadhūcaraṇālaktakāṅkite | <caesura/> malaye candanalatāpariṣvaṅgādhivāsite ||25||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.26" source="alignments/SS.1.6.26.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">vāti kāmijanānandajanano 'naṅgadīpanaḥ | <caesura/> dampatyor mānabhiduro vasante dakṣiṇo 'nilaḥ ||26||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.27" source="alignments/SS.1.6.27.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">diśo vasante vimalāḥ kānanair upaśobhitāḥ | <caesura/> kiṃśukāmbhojabakulacūtāśokādipuṣpitaiḥ ||27||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.28" source="alignments/SS.1.6.28.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">kokilāṣaṭpadagaṇair upagītā manoharāḥ | <caesura/> dakṣiṇānilasaṃvītāḥ sumukhāḥ pallavojjvalāḥ ||28||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.29" source="alignments/SS.1.6.29.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">grīṣme tīkṣṇāṃśurādityo māruto naiṟuto 'sukhaḥ | <caesura/> bhūs taptā saritas tanvyo diśaḥ prajvalitā iva ||29||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.30" source="alignments/SS.1.6.30.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">bhrāntacakrāhvayugalāḥ payaḥpānākulā mṛgāḥ | <caesura/> dhvastavīruttṛṇalatā viparṇāṅkitapādapāḥ ||30||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.31" source="alignments/SS.1.6.31.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">prāvṛṣy ambaram ānaddhaṃ paścimānilakarṣitaiḥ | <caesura/> ambudair vidyududdyotaprasrutais tumulasvanaiḥ ||31||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.32" source="alignments/SS.1.6.32.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">komalaśyāmaśaṣpāḍhyā śakragopojjvalā mahī | <caesura/> kadambanīpakuṭajasarjaketakabhūṣitā ||32||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.33" source="alignments/SS.1.6.33.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">tatra varṣāsu nadyo 'mbhaśchannokhātataṭadrumāḥ | <caesura/> vāpy aḥ protphullakumudanīlotpalavirājitāḥ ||33||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.34" source="alignments/SS.1.6.34.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">bhūr avyaktasthalaśvabhrā bahuśasyopaśobhitā | <caesura/> nātigarjatsravanmeghaniruddhārkagrahaṃ nabhaḥ ||34||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.35" source="alignments/SS.1.6.35.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">babhrur uṣṇaḥ śarady arkaḥ śvetābhravimalaṃ nabhaḥ | <caesura/> tathā sarāṃsy amburuhair bhānti haṃsāṃsaghaṭṭitaiḥ ||35||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.36" source="alignments/SS.1.6.36.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">paṅkaśuṣkadrumākīrṇā nimnonnatasameṣu bhūḥ | <caesura/> bāṇasaptāhvabandhūkakāśāsanavirājitā ||36||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.37" source="alignments/SS.1.6.37.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,21">
+    <lem> bhavati cātra svaguṇair</lem>
+    <rdgGrp select="#A1938 #N #K #H">
+      <rdg type="main">svaguṇair</rdg>
+      <rdg type="minor" wit="#K"><abbr type="suspension">bha</abbr><ex>vati cātra</ex> <cb/> svaguṇair</rdg>
+      <rdg type="minor" wit="#H"><abbr type="suspension">bha</abbr><ex>vati cātra</ex> ||<cb/> <caesura/> svaguṇair</rdg>
+    </rdgGrp>
+  </app>
+  <app loc="21,24">
+    <lem wit="#K #N #H">api</lem>
+    <rdg wit="#A1938">ati</rdg>
+  </app>
+  <app loc="24,31">
+    <lem wit="#A1938 #K #H">yukteṣu</lem>
+    <rdg wit="#N">bhū<unclear>ta</unclear></rdg>
+  </app>
+  <app loc="49,57">
+    <rdgGrp type="lemma" select="#A1938 #K #H">
+      <lem>viṣameṣv</lem>
+      <rdg type="minor" wit="#A1938 #K #H"><caesura/> viṣameṣv</rdg>
+    </rdgGrp>
+    <rdg wit="#N"><caesura/> viṣaṃmeṣv</rdg>
+  </app>
+  <app loc="62,67">
+    <lem wit="#A1938">doṣāḥ</lem>
+    <rdgGrp select="#K #N #H">
+      <rdg type="main">doṣā</rdg>
+      <rdg type="minor" wit="#K">doṣā<lb n="3"/></rdg>
+    </rdgGrp>
+  </app>
+  <app loc="87,90">
+    <lem wit="#K #N #H">iti</lem>
+    <rdg wit="#A1938"/>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.38" source="alignments/SS.1.6.38.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,0">
+    <lem/>
+    <rdg wit="#A1938">hared vasante śleṣmāṇaṃ pittaṃ śaradi nirharet | <caesura/> varṣāsu śamayed vāyuṃ prāgvikārasamucchrayāt ||38||</rdg>
+  </app>
+</listApp></standOff><standOff type="apparatus" corresp="#SS.1.6.trailer" source="alignments/SS.1.6.trailer.xml"><interp type="normalization">
+  <desc type="tagfilters">
+    <tag subtype="ignore">pc</tag>
+    <tag subtype="ignore">abbr</tag>
+    <tag subtype="ignore">corr</tag>
+    <tag subtype="ignore">ex</tag>
+    <tag subtype="ignore">head</tag>
+    <tag subtype="ignore">label</tag>
+    <tag subtype="ignore">note</tag>
+    <tag subtype="ignore">num</tag>
+    <tag subtype="ignore">rt</tag>
+    <tag subtype="ignore">locus</tag>
+    <tag subtype="ignore">metamark</tag>
+    <tag subtype="ignore">supplied</tag>
+    <tag subtype="ignore">surplus</tag>
+  </desc>
+</interp>
+<listApp>
+  <app loc="0,5">
+    <lem> || 6 ||</lem>
+    <rdg wit="#A1938">iti suśrutasaṃhitāyāṃ sūtrasthāne ṛtucaryā nāma ṣaṣṭho 'dhyāyaḥ ||6||</rdg>
+    <rdgGrp select="#K #H">
+      <rdg type="main"> bhra </rdg>
+      <rdg type="minor" wit="#K">||<unclear extent="1" unit="char"/>|| bhra ||</rdg>
+      <rdg type="minor" wit="#H"><unclear extent="1" unit="char"/><lb n="3"/>|| <unclear>bhra</unclear> || || ||</rdg>
+    </rdgGrp>
+    <rdg wit="#N"><unclear n="1" unit="char"/> || ❈</rdg>
+  </app>
+</listApp></standOff></TEI>
