@@ -1,0 +1,51 @@
+# edited_chapters.txt
+# -------------------
+# The chapters of the Nepalese Suśrutasaṃhitā that have been CRITICALLY EDITED.
+# Only these chapters are used by learn_normalization_rules.py to infer the
+# project's orthographic normalization conventions; collation-only chapters
+# are ignored as evidence (their lemmata are the mechanical collation base and
+# carry no editorial authority).
+#
+# Format: one chapter id per line, as work.sthāna.adhyāya, matching the first
+# three dot-separated fields of the verse xml:id values (e.g. verse
+# "SS.1.6.9" belongs to chapter "SS.1.6").  '#' starts a comment.
+#
+# Sthāna numbering used in the xml:ids:
+#   1 = Sūtrasthāna   2 = Nidānasthāna   3 = Śārīrasthāna
+#   4 = Cikitsāsthāna 5 = Kalpasthāna    6 = Uttaratantra
+#
+# Maintain this list as more chapters are finished.  Last updated 2026-07-16.
+
+# --- Sūtrasthāna: chapters 1, 2, 13, 14, 16 -------------------------------
+SS.1.1
+SS.1.2
+SS.1.13
+SS.1.14
+SS.1.16
+
+# --- Nidānasthāna  -------------------------------
+SS.2.1
+
+# -- Śārīrasthāna  -------------------------------
+SS.3.1
+SS.3.2
+SS.3.3
+SS.3.9
+
+# --- Cikitsāsthāna  -------------------------------
+SS.4.4
+
+# --- Kalpasthāna: all eight chapters --------------------------------------
+SS.5.1
+SS.5.2
+SS.5.3
+SS.5.4
+SS.5.5
+SS.5.6
+SS.5.7
+SS.5.8
+
+# --- Uttaratantra  -------------------------------
+SS.6.17
+SS.6.64
+SS.6.65
