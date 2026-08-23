@@ -5,7 +5,7 @@
     <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
         <fileDesc>
             <titleStmt>
-                <title>Transcription of MS Cambridge CUL Add. 2491: 03 Śārīrasthānam 1</title>
+                <title>Diplomatic transcription of MS Cambridge CUL Add. 2491: 03 Śārīrasthānam 1</title>
             </titleStmt>
             <publicationStmt>
                 <p>Suśruta project, University of Alberta</p>
@@ -22,12 +22,16 @@
                         <idno type="siglum">C31</idno>
                     </msIdentifier>
                     <msContents>
-                        <summary>A paper manuscript in Devanāgarī script.</summary>
+                        <summary>A paper manuscript in Devanāgarī script. The manuscript
+                            supports Gayadāsa's <title>Nyāyacandrikā</title> commentary on
+                            parts of the Śārīrasthāna of the
+                            <title>Suśrutasaṃhitā</title>. </summary>
                         <msItem defective="true" n="1">
                             <author role="author" xml:lang="sa">Gayadāsa</author>
                             <title xml:lang="sa">Nyāyacandrikā</title>
                             <!-- rubric, incipit, explicit, and finalRubric are given as examples -->
-                            <textLang mainLang="sa-Newa">Sanskrit in Devanagari script.</textLang>
+                            <textLang mainLang="sa-Deva">Sanskrit in western-Indian style
+                                Devanagari.</textLang>
                             <!-- @mainLang can be "sa-Deva", "sa-Mlym", "sa-Telu", "sa-Newa", etc. See ISO 15924 for more details. -->
                         </msItem>
                     </msContents>
@@ -36,20 +40,22 @@
                         <p resp="Jason Birch">Folio 1 missing.</p>
                         <objectDesc form="pothi">
                             <!-- @form can be "pothi", "book", scroll", etc. -->
-                            <supportDesc material="paper"
-                                ><!-- @material can be "paper", "industrial paper", "handmade paper", "palm-leaf", "palmyra palm-leaf", "talipot palm-leaf", "birch bark", "vellum", etc. --><!-- the following <foliation> tags are examples --></supportDesc>
+                            <supportDesc material="paper">
+                                <!-- @material can be "paper", "industrial paper", "handmade paper", "palm-leaf", "palmyra palm-leaf", "talipot palm-leaf", "birch bark", "vellum", etc. -->
+                                <!-- the following <foliation> tags are examples -->
+                                <foliation>[..].</foliation>
+                            </supportDesc>
 
                         </objectDesc>
                         <handDesc>
-                            <handNote medium="ink black" scope="sole" script="newa"/>
+                            <handNote medium="ink black" scope="sole" script="deva"/>
                         </handDesc>
                         <scriptDesc>
-                            <scriptNote xml:id="script-ba-va"><foreign xml:lang="ba">ba</foreign>
-                                and <foreign xml:lang="va">va</foreign> not
-                                distinguished.</scriptNote>
+                            <scriptNote xml:id="script-ba-va"><foreign xml:lang="ba"
+                                    >ba</foreign> and <foreign xml:lang="va">va</foreign>
+                                not distinguished.</scriptNote>
                             <scriptNote xml:id="svarna-nasals"/>
-                            <!-- see 
-				https://github.com/chchch/upama/issues/87#issuecomment-2357860543 -->
+                            <!-- see https://github.com/chchch/upama/issues/87#issuecomment-2357860543 -->
                         </scriptDesc>
 
 
@@ -70,7 +76,7 @@
 
         <revisionDesc>
             <change when="2026-02-12" who="Jason Birch">Transcribed f. 2r.</change>
-            <change when="2026-08-02" who="Dominik Wujastyk">Changed the filename</change>
+.            <change when="2026-08-02" who="Dominik Wujastyk">Changed the filename</change>
             <change when="2026-08-23" who="Dominik Wujastyk">Changed the TEI title field</change>
 
 
@@ -81,11 +87,14 @@
     <text xml:lang="sa-Latn-t-sa-Deva">
         <body>
             <div n="3" type="sthāna">
+                <head xml:lang="sa-Latn">[Śārīrasthānam]</head>
 
                 <div n="1" type="adhyāya">
+                    <head xml:lang="sa-Latn">[Adhyāya 1]</head>
 
+                    
 
-
+   
                     <pb facs="1" ana="MS-ADD-02491-000-00001.jpg" n="2r?" type="jpeg"/>
                     <l xml:id="G.3.1.1.note">
                         <note> This half folio does not appear to be 2r (next folio is numbered 2).
@@ -94,9 +103,7 @@
                             was numbered or not. However, its mention of yathovāca dhanvaṃtariḥ and
                             hetucintām suggest it might be 1v. </note></l>
 
-                </div>
-
-                <div n="2" type="adhyāya">
+        
 
                     <l xml:id="G.3.1.2">
                         <lb/><unclear reason="damage">bālo tikaṃ</unclear> kṛtaṃ prāṇikāyaṃ tasyedaṃ
@@ -135,7 +142,7 @@
                             reason="faded">kāras ta</unclear>thāṣṭama iti|| tatra vyāsasya manasā
                         pratiṣṭānirddeśe na caraka<unclear reason="faded">sya va</unclear><gap
                             reason="damaged" unit="akṣara" quantity="4"/>
-                        <milestone facs="MS-ADD-02491-000-00002.jpg" n="2v" unit="digital_image"/>
+                        <pb facs="2" n="2v" ana="MS-ADD-02491-000-00002.jpg"/>
                         <pb facs="2" n="2v"/>
                         <gap reason="damaged" unit="akṣara" quantity="3"/>ruṣo pa śatabhinna
                         darśanatvāt|| atra sarvabhūtānām ity asya bhāṣyaṃ nirddiśann āha||
@@ -162,7 +169,7 @@
                         pradhmanasya|| paṃgvaṃdha<add place="inline">va</add>d ubhayor api| saṃyo <!-- gas tatkṛtaḥ sargaḥ|| Sāṅkhyakārikā 21 -->
                         <!--The order of the digital images is wrong here, because gas tatkṛtaḥ
                                 sargaḥ follows from the previous half folio  -->
-                        <milestone facs="MS-ADD-02491-000-00004.jpg" n="3r" unit="digital_image"/>
+                        <pb facs="4" n="3r" ana="MS-ADD-02491-000-00004.jpg"/>
                         <pb facs="4" n="3r"/>
                         <lb/>gā ta<unclear reason="smudged">t</unclear>kṛtā sargraḥ <!-- sargaḥ
                             -->|pulliṃgasaṃjñā tatkṛta iti tat sa yoga
@@ -183,12 +190,13 @@
                         <unclear reason="damaged">yā</unclear>vad utpadyate satyā buddhir nnaitad
                         ahaṃ yayā| naiva tanmātramativijñānaya <!-- cf. naitanmameti vijñāya--> jñaḥ
                         sarvvam ativarttate <!-- ślokas 
-                                (ca.śā. 1) --> rūpādyartha <milestone
-                            facs="MS-ADD-02491-000-00003.jpg" n="3v" unit="digital_image"/>
-                        <pb facs="3" n="3v"/>
+                                (ca.śā. 1) --> rūpādyartha 
+
+			<pb facs="3" n="3v" ana="MS-ADD-02491-000-00003.jpg"/>
+
                         <!-- top margin: [prakṛter mahān mahato ahaṃkāra?a trividhaḥ ?ātvi?ād
                                 evārā? sāt iṃdriyāṇi tā ma?āt  -->
-                        <lb/>
+                        <lb n="1"/>
                         <unclear reason="damage">+ā</unclear>yāntarāśrayā punar ahaṃkārakaraṇāt|
                         ahaṃkāras tu kāryabuddhibheda eva yena carake kāryabuddhiviva<lb/><unclear
                             reason="damaged">ra</unclear>ṇenaivāhaṃkāro pi vivṛtaḥ | tathā ca||
@@ -208,33 +216,39 @@
                         <unclear reason="damaged" unit="3"
                             ><!-- maybe two akṣaras and a daṇḍa
                             --></unclear>bhūtādir iti|| tāmasāt tejaso
-                        sahāyāt sātvamātrayānuviddhāt| tallakṣaṇāny eva mohādi <milestone
-                            facs="MS-ADD-02491-000-00005.jpg" n="4r" unit="digital_image"/>
-                        <pb facs="5" n="4r"/>
-                        <lb/>lakṣaṇaṃ nirddiśann āha|| vātavarṇṇetyādi| tatra vātavedanāvarṇṇāḥ syā
-                        vāruṇādayaḥ| pittasya varṇṇāḥ pītanīlahāri<lb/>drādayaḥ| vedanā punar
-                                opa<subst><del>śoṣa</del><add place="top margin" cause="kākapāda"
-                                >cora</add></subst>dāhādayaḥ
-                        <!--oṣṭhaśoṣa? There may be a correction mark above the śo of śoṣa. But the
-                            correction is cora in the top margin, which doesn't make
-                            sense-->|śleṣmaṇas tu varṇṇāḥ| śvetādayaḥ|
-                        vedanāḥ kaṃḍvādayaḥ| gaṃdhas tu vāyo<lb/>r nnāsty eva| kaphasya ca viśro
-                        gaṃdho 'nukto 'pi draṣṭavyaḥ| kaphaduṣṭe pittasya gaṃdhaṃ kuṇape pūtipūyābhe
-                        ca vakṣati<lb/> śoṇitavarṇṇam iti| śoṇitavarmmaṃ pittavedanaṃ kuṇapagaṃdhaṃ
-                        carake | kuṇapaḥ </l>
+                        sahāyāt sātvamātrayānuviddhāt| tallakṣaṇāny eva mohādi 
+			
+			<pb facs="5" n="4r" ana="MS-ADD-02491-000-00004.jpg"/>
+                        
+                                              <lb n="1"/>lakṣaṇaṃ nirddiśann āha|| vātavarṇṇetyādi| tatra vātavedanāvarṇṇāḥ syā
+                        vāruṇādayaḥ| pittasya varṇṇāḥ pītanīlahāri<lb n="2"/>drādayaḥ| vedanā punar
+                        <choice><orig>oṣa</orig><corr>oṣṭha</corr></choice><subst><del>śo</del><add place="top margin"
+                                cause="kākapāda">co</add></subst>ṣadāhādayaḥ |śleṣmaṇas tu varṇṇāḥ| śvetādayaḥ| vedanāḥ kaṃḍvādayaḥ| gaṃdhas
+                        tu vāyo<lb n="3"/>r nnāsty eva| kaphasya ca viśro gaṃdho 'nukto 'pi draṣṭavyaḥ|
+                        kaphaduṣṭe pittasya gaṃdhaṃ kuṇape pūtipūyābhe ca vakṣati<lb n="4"/> śoṇitavarṇṇam
+                        iti| śoṇitavarmmaṃ pittavedanaṃ kuṇapagaṃdhaṃ carake | kuṇapaḥ
+                        <choice><sic>śabaḥ</sic><corr>śavaḥ</corr></choice> kuṇapasyeva gaṃdhe 'syeti||<lb n="5"/>
+                        upamānāc ceti samāsāṃtaḥ| tato janakasya śoṇitasyāpi doṣā evaṃ dūṣayitāro
+                        'pi apadeśas tu <unclear reason="worm hole">ghṛ</unclear>tataila<lb n="6"/>
+                        dugdhavat| tad uktam atyarthaṃ doṣadūṣiteṣu dhātuṣu saṃjñā rasajo yaṃ
+                        śoṇitajo yam ityādi|
+
+</l>
 
 
 
 
                 </div>
-                <!-- end of chapter 2 of Sūtrasthāna-->
+           
             </div>
             <!-- end of sthana -->
 
         </body>
     </text>
-    <facsimile>
-        <graphic url="iiif.archive.org/iiif/add.2491/manifest.json"/>
+    
+<facsimile>
+        <!--    <graphic url="https://iiif.archive.org/iiif/add.2491/manifest.json"/> -->
+        <graphic url="https://cudl.lib.cam.ac.uk//iiif/MS-ADD-02491"/>
     </facsimile>
 
 </TEI>
