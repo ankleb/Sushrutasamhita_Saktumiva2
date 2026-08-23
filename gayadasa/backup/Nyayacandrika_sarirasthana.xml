@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tei-to-html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <script src="./lib/js/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"/>
+    <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
+        <fileDesc>
+            <titleStmt>
+                <title>Diplomatic transcription of MS Cambridge CUL Add. 2491</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Suśruta project, University of Alberta</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <placeName>
+                            <settlement>Cambridge</settlement>
+                            <country>UK</country>
+                        </placeName>
+                        <institution>Cambridge University Library<ptr/></institution>
+                        <idno>Add.2491</idno>
+                        <idno type="siglum">C</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <summary>A paper manuscript in Devanāgarī script. The manuscript
+                            supports Gayadāsa's <title>Nyāyacandrikā</title> commentary on
+                            parts of the Śārīrasthāna of the
+                            <title>Suśrutasaṃhitā</title>. </summary>
+                        <msItem defective="true" n="1">
+                            <author role="author" xml:lang="sa">Gayadāsa</author>
+                            <title xml:lang="sa">Nyāyacandrikā</title>
+                            <!-- rubric, incipit, explicit, and finalRubric are given as examples -->
+                            <textLang mainLang="sa-Deva">Sanskrit in western-Indian style
+                                Devanagari.</textLang>
+                            <!-- @mainLang can be "sa-Deva", "sa-Mlym", "sa-Telu", "sa-Newa", etc. See ISO 15924 for more details. -->
+                        </msItem>
+                    </msContents>
+
+                    <physDesc>
+                        <p resp="Jason Birch">Folio 1 missing.</p>
+                        <objectDesc form="pothi">
+                            <!-- @form can be "pothi", "book", scroll", etc. -->
+                            <supportDesc material="paper">
+                                <!-- @material can be "paper", "industrial paper", "handmade paper", "palm-leaf", "palmyra palm-leaf", "talipot palm-leaf", "birch bark", "vellum", etc. -->
+                                <!-- the following <foliation> tags are examples -->
+                                <foliation>ff. 2, ?, 15-50, [51], 52-59, ?, 60-67,
+                                    (pencil:) 68-78.</foliation>
+                            </supportDesc>
+
+                        </objectDesc>
+                        <handDesc>
+                            <handNote medium="ink black" scope="sole" script="deva"/>
+                        </handDesc>
+                        <scriptDesc>
+                            <scriptNote xml:id="script-ba-va"><foreign xml:lang="ba"
+                                    >ba</foreign> and <foreign xml:lang="va">va</foreign>
+                                not distinguished.</scriptNote>
+                            <scriptNote xml:id="svarna-nasals"/>
+                            <!-- see https://github.com/chchch/upama/issues/87#issuecomment-2357860543 -->
+                        </scriptDesc>
+
+
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <origDate calendar="Gregorian" when="1468" cert="medium"
+                                evidence="same scribe as Bikaner RORI 5157."/>
+                            <!-- calendar can be "Vikrama", "Śaka", etc. Dates can be approximate or exact. -->
+                        </origin>
+                    </history>
+
+
+                </msDesc>
+
+            </sourceDesc>
+        </fileDesc>
+
+        <revisionDesc>
+            <change when="2026-02-12" who="Jason Birch">Transcribed f. 2r.</change>
+            <change when="2026-04-14" who="Dominik Wujastyk">Tweaks to the TEI header, and
+                xml tagging. Added the head elements</change>
+
+        </revisionDesc>
+
+    </teiHeader>
+
+    <text xml:lang="sa">
+        <body>
+            <div n="3" type="sthāna">
+                <head xml:lang="sa-Latn">[Śārīrasthānam]</head>
+
+                <div n="1" type="adhyāya">
+                    <head xml:lang="sa-Latn">[Adhyāya 1]</head>
+
+                    
+
+                    <pb facs="1" n="1v?" ana="MS-ADD-02491-000-00001.jpg"/>
+                    <!-- This half folio does not appear to be 2r (next folio
+                        is numbered 2). The shape of the folio edges do not match those of the folio
+                        in the next image. Unfortunately, the margins are missing. So we do not know
+                        if it was numbered or not. However, its mention of yathovāca dhanvaṃtariḥ
+                        and hetucintām suggest it might be 1v? (and -->
+
+
+
+                    <l xml:id="G.3.1.2">
+                        <label xml:lang="en">G.3.1.2</label>
+                        <caesura/>
+                        <lb n="1"/><unclear reason="damage">bālo tikaṃ</unclear> kṛtaṃ
+                        prāṇikāyaṃ tasyedaṃ hetusvala<unclear reason="faded"
+                            >kṣa</unclear>ṇakā<unclear>rya</unclear>ciṃtayā sthānam iti||
+                        hetutvād iti eva viśeṣo <unclear reason="faded">rali</unclear><lb
+                            n="2"/>vyākhyā prakathayiṣyām<unclear>ā||</unclear> yathovāca
+                        dhanvaṃtarir iti pratisaṃskartṛsūtraṃ|| </l>
+
+                    <l xml:id="G.3.1.3">
+                        <label xml:lang="en">G.3.1.3</label>
+                        <caesura/>
+                         tatrādau hetuniścaṃtanam <!-- hetucintām --> āha|| sa<unclear
+                            reason="faded">rvabhū</unclear><lb n="3"/>tānām ityādi||
+                        sarvabhūtāni kṛ<unclear>ty</unclear>āni utpādayaṃti|
+                        vakṣyamāṇamahadāyāmūlatagaṃ <!--
+                                ? --> tasya kāraṇaṃ kiṃ tad ity
+                        āhā <lb n="4"/> avyaktaṃ nāma || nāmaprasiddhyupasaṃgrahe|| tatra
+                        vyaktam api yat dravyaṃ prasiddhaṃ || tena vyaktād avyaktam iti ||
+                            paramā<unclear reason="faded">tma</unclear><lb n="5"/>ny api
+                        avyaktasaṃjñā nirastā | kiṃ tad avyaktaśabdaprasiddham ity āha|
+                        satvarajastamolakṣaṇam iti| <name>carake</name> || puna<lb n="6"
+                        />r ātmany evāvyaktavyapadeśā|| ata eva caturviṃśatikatatvaṃ ||
+                        tasyāvyaktasya kāraṇam athāstīti darśayann āha||<lb n="7"/>
+                        akāraṇam iti avidyamānotpattihetrur<!-- hetu --> aṣṭarūpam iti||
+                        aṣṭau rūpāṇi cāsya|| etā ca tā buddhi ahaṃkāraspā<lb n="8"
+                            /><unclear reason="faded">ñca</unclear>tanmātrāṇāṃ
+                        pṛthakkāraṇatvaṃ niṣiddhaṃ|| anye pi pradhānasyaiva pariṇamato
+                        buddhyādīni rūpāṇīty ūcuḥ||cha|| aṣṭa<lb n="9"/>rūpa<unclear
+                            reason="illsegible">m</unclear> ity atra jajā||
+                            avyaktabuddhyahaṃkārā<unclear>ḥ</unclear>|| pañcamahābhūtānīty
+                        āha|| paṭhaṃti ca vyāsam|| <cit source="BhG 7.4"><quote>bhūmir āpo nalo
+                                vā<lb n="10"/><gap reason="damaged" unit="akṣara" quantity="2"/>
+                                <choice><orig>  </orig><corr>yuḥ khaṃ</corr></choice> mano <unclear reason="faded">buddhir
+                                    eva</unclear> ca | ahaṃkāra itīyaṃ me
+                                    bhinnā prakṛtir aṣṭadhā||1||</quote></cit> tathāpi hi vara ke 'pi|| svādīni bu<lb
+                            n="11"/><gap reason="damaged" unit="akṣara" quantity="4"
+                        />sahaṃ <unclear reason="faded">kāras ta</unclear>thāṣṭama iti||
+                        tatra vyāsasya manasā pratiṣṭā nirddeśe na
+                            <name>caraka</name><unclear reason="faded">sya
+                            va</unclear><gap reason="damaged" unit="akṣara" quantity="4"/>
+                        <!--  -->
+                        <!-- 2v -->
+                        <!--  -->
+                        <pb facs="2" n="2v" ana="MS-ADD-02491-000-00002.jpg"/>
+                        <lb n="1"/>
+                        <gap reason="damaged" unit="akṣara" quantity="3"/>ruṣo pa
+                        śatabhinna darśanatvāt|| atra sarvabhūtānām ity asya bhāṣyaṃ
+                        nirddiśann āha|| akhila<gap reason="damaged" unit="akṣara"
+                            quantity="5"/><lb n="2"/><gap reason="damaged" unit="akṣara"
+                            quantity="2"/>ma <unclear reason="crease">stasya</unclear>
+                        mahadāditatvabhūtabhavanopakaraṇātmakaviśvasya bhavahetur
+                        iti||cha|| upādānakāraṇam iti||<lb n="3"/> atha <unclear
+                            reason="faded">||</unclear> saṃbhavasya hetur ity ato
+                        bhavaṃti|| tatrākhila jagadutpādakārakasya mahadādir ity arthaḥ||
+                            tadeka<del rend="cancelled">mi</del><lb n="4"/>ti śilopaṭṭavat
+                        sāmyāvasthāyāṃ sthitena punas tridaṃḍavat|| ataḥ
+                                <choice><sic>śilākākalyaṃ</sic><corr cert="medium"
+                                >śilokakalyaṃ</corr></choice> bhinnam etat
+                            vyavasthitam|<lb n="5"/> anekeṣāṃ bahūnāṃ kṣetrajñānāṃ
+                        śarīravidāṃ karmmapuruṣāṇāṃ teṣāṃ śarīrabhāvāya|| adhiṣṭāṇaṃ
+                            viṣayaḥ||<lb n="6"/> eteṣāṃ karmmātmakānāṃ punaḥ parityāgam
+                        eva|| ekam anekeṣāṃ adhiṣṭānam iti|| prasrutam upamānena saṃbaṃdaṃ
+                            ku<lb n="7"/>rvann āha||cha|| audakānāṃ bhāvānām
+                        iti||udakabhāvāsv audakāḥ|| nadīnadasarastaḍāgaprabhṛtayaḥ||
+                            ānye<lb n="8"/> audakabhāvā matsyādaya ity āhuḥ|| tan na
+                        manyaṃte|| gaṃgādyadhiṣṭānatvāt|| audakānāṃ bhāvānāṃ
+                            pradeśākhyā<lb n="9"/><unclear reason="faded">pa</unclear>ko
+                        dṛṣṭoparsmmavatad evāvyaktaṃ karaṇatve nādhikṛtaṃ|| sarvabhūtānāṃ
+                        kāraṇam iti vacanāt|| ātmanaḥ puna<lb n="10"/><unclear
+                            reason="faded">r</unclear> bhūtasadbhāvina akāraṇatvaṃ
+                        nityatvaṃ ca|| sadakāraṇavan nityam iti vacanāt|| ata eva
+                        kṣetrajñasya paṃgvaṃdha<lb n="11"/><gap reason="damaged"
+                            unit="akṣara" quantity="2"/>r iva saṃyogaḥ|| tad uktaṃ||
+                        puruṣasya darśanārthaṃ kevalyārthaṃ|| tathā pradhmanasya||
+                            paṃgvaṃdha<add place="inline">va</add>d ubhayor api| saṃyo <!-- gas tatkṛtaḥ sargaḥ|| Sāṅkhyakārikā 21 -->
+                        <!--The order of the digital images is wrong here, because gas tatkṛtaḥ
+                                sargaḥ follows from the previous half folio  -->
+                        
+                        <!-- 3r -->
+                        
+                        <pb facs="4" n="3r" ana="MS-ADD-02491-000-00004.jpg"/>
+                        <lb n="1"/>gā ta<unclear reason="smudged">t</unclear>kṛtā
+                        <choice><orig>sargraḥ</orig><corr>sargaḥ</corr></choice>|pulliṃgasaṃjñā tatkṛta iti tat sa
+                        yoga kṛtaḥ| saṃskṛta iti satvā<unclear>di</unclear>lakaṇaḥ| nanu
+                            ka<lb n="2"/>smād ekasmāt anekakarmmaṇāṃ sarvvabhūtānāṃ utpāda
+                        ucyate | anekaśaktipracitāt pra<unclear>dhā</unclear>nād
+                        kṣetrajñādhiṣṭitān mahān utpadyate| eva kevalāt kāryabhe<lb n="3"
+                        />dāt prajāyaṃte| mahattatvaṃ jāyate <lb n="4"/> prakṛter buddhir
+                        jñāyate ity arthaḥ| saiva kāryātmikāt e<unclear>va</unclear>
+                        buddheḥ karaṇaṃ| sā tu cicchaktir nirmmanādarppaṇamūrtti<lb n="5"
+                        />r iva rūpādyarthachāyām anupratipadyate| samahān talliṃgam iti|
+                        talliṃgādiviśeṣaṇena śuddhasatvānāṃ a<lb n="6"
+                        />vadhāraṇavyavachinnamātravivekalakṣaṇam asatyāṃ buddhiṃ
+                        nirasyati| tad uktaṃ carake| suddhasatvasya yā suddhā<lb n="7"/>
+                        satyā buddhiḥ pravarttate| yayā bhinatty atibalaṃ mahāmohamayaṃ
+                        tamaḥ| sarvvabhāvasvabhāvajño yayā bhavati nispṛ<lb n="8"/>haḥ||
+                        yogaṃ yayā sādhayati sāṃkhyaḥ saṃpadyate yayā|| yayā
+                        nopaityahaṃkāraṃ nopāste kāraṇaṃ yayā| yayā nālaṃ<lb n="9"/>bate
+                        kiṃcit sarvaṃ saṃpadyate yayā| yāṃti brahma yayā nityam akṣaraṃ ca
+                        tathākṣaraṃ| <!-- ślokas  (ca.śā. 1) --> tathā punar api
+                            tatraivoktaṃ|<lb n="10"/>
+                        <unclear reason="damaged">yā</unclear>vad utpadyate satyā buddhir
+                        nnaitad ahaṃ yayā| naiva tanmātramativijñānaya
+                        <!-- cf. naitanmameti vijñāya--> jñaḥ sarvvam ativarttate
+                        <!-- ślokas (ca.śā. 1) --> rūpādyartha
+                            
+                            <!-- 3v -->
+                            
+                        <pb facs="3" n="3v" ana="MS-ADD-02491-000-00003.jpg"/>
+                        <lb n="1"/>
+                        <gap reason="damaged" unit="akṣara" quantity="1"/>yāntarāśrayā
+                        <!-- ābhyantarāśrayā? --> punar ahaṃkārakaraṇāt| ahaṃkāras tu
+                        kāryabuddhiteda eva yena carake kāryabuddhiviva<lb n="2"/><gap
+                            reason="damaged" unit="akṣara" quantity="1"/>ṇenaivāhaṃkāro pi
+                        vivṛtaḥ | | tathā ca|| kāraṇāni mano buddhir buddhiḥ karmmeṃdriyāṇi ca
+                        | buddher hi grahaṇe<lb n="3"/>ni vāhaṃkāragrahaṇāt sa tu| trividhā
+                        vaikārikādibhedena| vaikārikādisaṃjñās tu pūrvācāryaiḥ saṃvyavahārā<lb n="4"/>
+                        ya kṛtāḥ|| vaikārikādiṣu yato yad utpadyate tat sannirddiśann āha||
+                        tatra vaikārikādityādi|| tatra vaikārika<lb n="5"/>sātvikās tejaso rājasaḥ|
+                        bhūtāditāmasaḥ| sātvikās tejāso rājasaḥ <!-- note repetition -->
+                        bhūtāditāmasaḥ sātvikād rājasa<lb n="6"/>sahāyāt| tamomātrānuviddhāt|
+                        ekadeśeṃdriyāṇi tallalakṣaṇāni prakāśarūpāṇi | tāny ahaṃkārād
+                        utpannā<lb n="7"/>ni| ahaṃkārāṇīṃdriyāṇīti sāṃkhye vaidyake tu bhautikāni| tata
+                        evaṃ pūrvāṇi <del cause="cancellation">tri</del>śrotrādīni
+                        ghrāṇāṃtāni||<lb n="8"/> buddhīṃdriyāṇi buddher buddher <!-- repetition
+                        -->āśrayatvāt|| teṣām karmmāśrayāṇītarāṇi vāgādīni pādāṃtāni|
+                        ubhayātmakaṃ<lb n="9"/> mana iti| ubhayeṃdriyasvabhāvam iti| pravṛtto hi teṣāṃ
+                        manasā sahā bhinnānām eva pravṛttā tat sa bhāvam iva vṛ<lb n="10"/> <unclear
+                            reason="damaged" unit="3" ><!-- maybe two akṣaras and a daṇḍa
+                            --></unclear>bhūtādir iti|| tāmasāt tejaso sahāyāt sātvamātrayānuviddhāt| tallakṣaṇāny eva mohādi 
+                        
+                        <!-- 4r -->
+                        
+                        <pb facs="5" n="4r" ana="MS-ADD-02491-000-00004.jpg"/>
+                        <lb n="1"/>lakṣaṇaṃ nirddiśann āha|| vātavarṇṇetyādi| tatra vātavedanāvarṇṇāḥ syā
+                        vāruṇādayaḥ| pittasya varṇṇāḥ pītanīlahāri<lb n="2"/>drādayaḥ| vedanā punar
+                        <choice><orig>oṣa</orig><corr>oṣṭha</corr></choice><subst><del>śo</del><add place="top margin"
+                                cause="kākapāda">co</add></subst>ṣadāhādayaḥ |śleṣmaṇas tu varṇṇāḥ| śvetādayaḥ| vedanāḥ kaṃḍvādayaḥ| gaṃdhas
+                        tu vāyo<lb n="3"/>r nnāsty eva| kaphasya ca viśro gaṃdho 'nukto 'pi draṣṭavyaḥ|
+                        kaphaduṣṭe pittasya gaṃdhaṃ kuṇape pūtipūyābhe ca vakṣati<lb n="4"/> śoṇitavarṇṇam
+                        iti| śoṇitavarmmaṃ pittavedanaṃ kuṇapagaṃdhaṃ carake | kuṇapaḥ
+                        <choice><sic>śabaḥ</sic><corr>śavaḥ</corr></choice> kuṇapasyeva gaṃdhe 'syeti||<lb n="5"/>
+                        upamānāc ceti samāsāṃtaḥ| tato janakasya śoṇitasyāpi doṣā evaṃ dūṣayitāro
+                        'pi apadeśas tu <unclear reason="worm hole">ghṛ</unclear>tataila<lb n="6"/>
+                        dugdhavat| tad uktam atyarthaṃ doṣadūṣiteṣu dhātuṣu saṃjñā rasajo yaṃ
+                        śoṇitajo yam ityādi|
+                      
+                        
+                    </l>
+
+
+
+
+
+
+
+
+                </div>
+                <!-- end of chapter 2 of Sūtrasthāna-->
+            </div>
+            <!-- end of sthana -->
+
+        </body>
+    </text>
+    <facsimile>
+        <!--    <graphic url="https://iiif.archive.org/iiif/add.2491/manifest.json"/> -->
+        <graphic url="https://cudl.lib.cam.ac.uk//iiif/MS-ADD-02491"/>
+    </facsimile>
+
+</TEI>
