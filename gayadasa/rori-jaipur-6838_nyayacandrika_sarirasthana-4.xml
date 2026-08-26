@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tei-to-html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <script src="./lib/js/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"/>
+    <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
+        <fileDesc>
+            <titleStmt>
+                <title>Diplomatic transcription of MS Jaipur RORI 6838: 03 Śārīrasthānam 4</title>
+            </titleStmt>
+
+            <publicationStmt>
+                <p>Suśruta project, University of Alberta</p>
+            </publicationStmt>
+
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <placeName>
+                            <settlement>Jaipur</settlement>
+                            <region>Rajasthan</region>
+                            <country>India</country>
+                        </placeName>
+                        <institution>Rajasthan Oriental Research Institute</institution>
+                        <idno>6838</idno>
+                        <idno type="catalogue">RORI Catalogue, vol. XI, serial no. 3988</idno>
+                        <idno type="siglum">J</idno>
+                    </msIdentifier>
+
+                    <msContents>
+                        <summary>An incomplete manuscript transmitting portions of the <title
+                                xml:lang="sa">Suśrutasaṃhitā</title> together with Gayadāsa’s <title
+                                xml:lang="sa">Nyāyacandrikā</title>. The extant portion covers
+                            Sūtrasthāna 18-46, Nidānasthāna 1-16, and Śārīrasthāna 1-10.</summary>
+
+                        <msItem defective="true" n="1">
+                            <author role="author" xml:lang="sa">Suśruta</author>
+                            <title xml:lang="sa">Suśrutasaṃhitā</title>
+                            <textLang mainLang="sa-Deva">Sanskrit in Devanagari script.</textLang>
+                        </msItem>
+
+                        <msItem defective="true" n="2">
+                            <author role="author" xml:lang="sa">Gayadāsa</author>
+                            <title type="commentary" xml:lang="sa">Nyāyacandrikā</title>
+                            <textLang mainLang="sa-Deva">Sanskrit in Devanagari script.</textLang>
+                        </msItem>
+                    </msContents>
+
+                    <physDesc>
+                        <p>The extant physical bundle comprises approximately 560 folios. The
+                            digital copy contains 1,115 photographs of individual folio sides.</p>
+
+                        <objectDesc form="pothi">
+                            <supportDesc material="paper">
+                                <support>
+                                    <p>The folios measure approximately 30 × 13 cm.</p>
+                                </support>
+
+                                <foliation>The principal foliation is written in the lower part of
+                                    the right margin of each verso. The Nidānasthāna and
+                                    Śārīrasthāna also have separate sectional foliations, each
+                                    beginning with 1. The opening folios 1-215 are missing. Folio
+                                    287 occurs twice. The foliation of folios 656-665 is no longer
+                                    visible because the right margins have broken away.</foliation>
+
+                                <condition>The manuscript is incomplete and partly damaged. Most
+                                    damage is confined to the margins. A large wormhole affects the
+                                    right side of folios 426-547 and, at its largest, crosses seven
+                                    lines and extends across approximately seven or eight
+                                    akṣaras.</condition>
+                            </supportDesc>
+
+                            <layoutDesc>
+                                <layout writtenLines="10">Each side contains ten lines, with
+                                    approximately 40-45 akṣaras per line. Straight orange-red lines
+                                    mark the left and right boundaries of the writing area.</layout>
+                            </layoutDesc>
+                        </objectDesc>
+
+                        <handDesc>
+                            <handNote medium="black ink" scope="sole" script="Devanagari">The
+                                manuscript is written in a clear variety of Devanagari.</handNote>
+                        </handDesc>
+
+                        <decoDesc>
+                            <decoNote>Each verso has an orange-red circle in both margins,
+                                occasionally elaborated into a floral design.</decoNote>
+                            <decoNote>The manuscript is extensively rubricated in orange-red ink.
+                                Rubrication is used for, among other things, colophons, phrases
+                                introducing citations, and the syllable <foreign xml:lang="sa"
+                                    >cha</foreign> marking the beginning of a passage from the
+                                    <foreign xml:lang="sa">mūla</foreign>.</decoNote>
+                        </decoDesc>
+                    </physDesc>
+
+                    <history>
+                        <origin>
+                            <origDate calendar="Vikrama" when="1467-09-15">Vikrama Saṃvat 1525,
+                                bright half of Bhādrapada, seventh tithi, Sunday: 6 September 1467
+                                in the Julian calendar, corresponding to 15 September 1467 in the
+                                proleptic Gregorian calendar.</origDate>
+                            <origPlace>Ahmedabad</origPlace>
+                            <p>The manuscript was copied during the reign of Sultan Maḥmūd I Begadā.
+                                It was commissioned by Minister Śrī Māṇḍaṇa, son of the physician
+                                and minister Śrī Nārāyaṇa, for the study of his sons and grandsons.
+                                The scribe identifies himself as Rāula Nārasiṃha. Both the
+                                commissioner and the scribe belonged to the Ābhyantara Nāgara
+                                community.</p>
+                        </origin>
+                    </history>
+
+                    <additional>
+                        <adminInfo>
+                            <note>RORI 6838 and RORI 5157 preserve different surviving portions of
+                                the same original manuscript. RORI 5157 contains the Kalpasthāna.
+                                The intervening Cikitsāsthāna and the subsequent Uttaratantra have
+                                not yet been located.</note>
+                        </adminInfo>
+                    </additional>
+                </msDesc>
+            </sourceDesc>
+        </fileDesc>
+
+        <revisionDesc>
+            <change when="2026-08-25" who="Andrey Klebanov">Began this transcription file.</change>
+        </revisionDesc>
+    </teiHeader>
+
+    <text xml:lang="sa-Latn-t-sa-Deva">
+
+        <body>
+            <div n="3" type="sthāna">
+
+                <div n="4" type="adhyāya">
+
+                    <!--<milestone n="718r10" unit="folio" facs="6838 ROI0000534105 Nyāyacandrikāpañjikā   PDFA.pdf page_1004"/>-->
+
+                    <lg xml:id="SS.3.4.81">
+                        <l> śaucam āsti<pb ana="6838 ROI0000534105 Nyāyacandrikāpañjikā
+                                PDFA.pdf page_1005" n="718v"/><lb n="1"/>kyam abhyāsor vedeṣu
+                            gurupūjanaṃ | priyātithi<unclear>tva</unclear>m ijyā ca brahmakāyasya
+                            lakṣaṇaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.82">
+                        <l> māhātmyaṃ śauryam ājñā ca satataṃ śāstrabuddhitā | <lb n="2"/>bhṛtyānāṃ
+                            bharaṇaṃ cāpi māheṃdraṃ kāyalakṣaṇaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.83">
+                        <l> śītasevā sahiṣṇutvaṃ paiṃgalyaṃ harikeśatā | priyavāditram ity etad
+                            vāruṇaṃ kā<lb n="3"/>yalakṣaṇaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.84">
+                        <l> madhyasthatāṃ sahiṣṇutvam arthasyāgamasaṃcayau | mahāprasavaśaktiś ca
+                            kauveraṃ kāyalakṣaṇaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.85">
+                        <l> gandhamālyapriyatvaṃ ca <lb n="4"/>nṛtyavādi<unclear>tra</unclear>kāmitā
+                            | vihāraśīlatā caiva gaṃdharvaṃ kāyalakṣaṇaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.86">
+                        <l> prāptakārī dṛḍhotthāno nirbhayaḥ smṛtimān śuciḥ | rāga<lb n="5"
+                            />mohabhayadveṣair varjito yamasatvavān | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.87">
+                        <l> japavratabrahmacaryahomādhyayanasevinaṃ | jñānavijñānasaṃpannam
+                            ṛṣisatvaṃ naraṃ vi<lb n="6"/>duḥ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.88">
+                        <l> saptaite sāttvikāḥ kāyā rājasāṃs tu nibodha me | aiśvaryavaṃtaṃ raudraṃ
+                            ca śūracaṃḍam asūyakaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.89ab">
+                        <l> ekāsinaṃ caudarikam āsu<lb n="7"/>raṃ satvam īdṛśaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.91cd">
+                        <l> ekāntagrāhitā raudryam asūyā dharmabāhyatā | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.92">
+                        <l> bhṛśamātratamaś cāpi rākṣasaṃ kāyalakṣaṇaṃ | uchraṣṭāhāraśīlatvaṃ sā<lb
+                                n="8"/>hasapriyatā tathā | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.93ab">
+                        <l> strīlolupatvaṃ nairlajyaṃ paiśācaṃ kāyalakṣaṇaṃ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.89cd">
+                        <l> tīkṣṇam āyāminaṃ bhīruṃ daṃganāyānvitaṃ tathā | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.90">
+                        <l>vihā<lb n="9"/>rācāracapalaṃ sarpasatvaṃ vidur naraṃ | asaṃvibhāgam
+                            alasaṃ duḥkhaśīlam asūyakaṃ |</l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.94ab">
+                        <l> lolupaṃ cā<unclear>pphu</unclear>dātāraṃ pretasatvaṃ vidur naram | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.90cd">
+                        <l><lb n="10"/>pravṛddhakāmasevī cāpy ajasrāhāra eva ca |</l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.91ab">
+                        <l>amaraṣaṇo 'navaṃsthāyī śākunaṃ kāyalakṣaṇaṃ</l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.94cd">
+                        <l>ṣaḍ ete rājasā kāyās tāmasāṃ<pb ana="6838 ROI0000534105
+                                Nyāyacandrikāpañjikā                                 PDFA.pdf
+                                page_1006" n="719r"/><lb n="1"/>s tu nibodha me |</l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.95">
+                        <l> durmedhastvaṃ maṃdatā ca svapne maithunanityatā | nirākariṣṇutā caiva
+                            vijñeyāḥ pāśavā guṇāḥ | </l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.96">
+                        <l> anavasthitatā <lb n="2"/>maurkhyaṃ bhīrutvaṃ salilārthitā |
+                            parasparābhimardaś ca matsyasatvasya lakṣaṇaṃ |</l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.97">
+                        <l> ekasthānarabhir nityam āhāre kevale rataḥ | <lb n="3"/>vanaspatyo naraḥ
+                            sattvaṃ dharmakāmārthavarjitaḥ |</l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.98">
+                        <l> ity ete trividhā<subst><add place="above">ḥ</add></subst> kāyāḥ proktā
+                            vai tāmasās tathā | kāyānāṃ prakṛtīr jñā<lb n="4"/>tvā tv anurūpāṃ
+                            kriyāṃ caret |</l>
+                    </lg>
+
+                    <lg xml:id="SS.3.4.99">
+                        <l> mahāprakṛtayas tv etā rajaḥsatvatamaḥkṛtāḥ | proktā lakṣaṇataḥ samyag
+                            bhiṣak tāś ca vibhāvaye<lb n="5"/>t | </l>
+                    </lg>
+
+                    <lg xml:id="NC.3.4.81-99">
+                        <l> śaucam āstikyam ityādi || brahmakāyalakṣaṇaṃ | brahmasatvenotyā <lb
+                                n="6"/>di tasya kāyasya | etena satvakāyayor nnitya<lb n="6"/>m
+                            anyonyānuvidhāyitvam uktaṃ | <subst><add place="margin left"
+                                    >māhātmyaṃ</add></subst> śauryam ityādi māheṃdrakāyalakṣaṇaṃ |
+                            sahiṣṇutve śītasevām ityādi vāru<lb n="7"/>ṇaṃ kāyalakṣaṇaṃ |
+                            madhyasthatām ityādi kauverakāyalakṣaṇaṃ | mahāprasavaśaktiḥ
+                            prajotpādanasāmarthyam | kuve<lb n="8"/>rasatvānaṃtaraṃ yāmyasatve
+                            vaktavye gaṃdharvasatvābhidhānaṃ gaṃdharvasatvaṃ yakṣasadṛśaṃ
+                            yakṣasatvadyotanārthaṃ prāptakārītyādinā yāmyaṃ satvaṃ
+                            japavratabrahmacaryetyādinā ṛṣisatvaṃ | evaṃ
+                                brāhmamāheṃdravāruṇākauveragaṃdharvayāmya<lb n="10"/>ṛṣisatvabhedena
+                            sapta sātvikā bhedāḥ || śuddhasatvāḥ | teṣv api brāhmaṃ śuddhatamaṃ |
+                            aiśvaryavaṃtam ityādi || āsuraṃ sa<pb ana="6838 ROI0000534105
+                                Nyāyacandrikāpañjikā   PDFA.pdf page_1007" n="719v"/><lb n="1"
+                            />tvaṃ raudraṃ tīkṣṇaṃ | asūyakaṃ guṇeṣu matsariṇaṃ | aupadhikaṃ
+                            chadmaparaṃ | ekāṃtagrāhitetyādi rākṣasaṃ satvalakṣaṇaṃ | ekāṃtagrā<lb n="2"/>hitā
+                            niyamena gṛhītā yogaśīlatā | ucchriṣṭāhāraśīlatvam ityādinā piśācasatvaṃ ucchi<lb n="3"/>ṣṭāhāraśīlatā ucchiṣṭāhārācāriṇo bhāvaḥ | āvokṣasāhasapriyatā || apacitaprītiḥ<lb n="2"/>ભાવsāhasaprītiś cātīkṣṇam
+                            ity ādināpi sarpyasatvaṃ || krodhe sati satvena lakṣitaṃ | akrodhetīsaṃ
+                            | tad uktaṃ cara<lb n="3"/>ke || akruddhaṃ śūraṃ akruddhaṃ bhīrum iti |
+                            asaṃvibhāgetyādinā pretatvaṃ | eteṣu ṣaṭsu sahaādayo rājasa|ષ<lb n="4"
+                            />bhedāḥ | durmmedhastvaṃ ity ādinā paśusatvaṃ | anavasthitetyādinā
+                            matsyasatvaṃ | satvabudhyaṃgahī netyādinā vṛkṣa<lb n="5"/>satvaṃ |
+                            satvabudhyaṃgahīnābhyāṃ hīnaṃ sthiraṃ ekasthānasthaṃ | ete trayas tamo
+                            bahulāḥ satvabhedāḥ | eṣāṃ sthāne ciki<lb n="6"/>tsopayogitvaṃ darśayan
+                            āha | vijñāyakāyavikṛtiriti | anurūpām ucitāṃ | tad uktaṃ bhūtavidyāyāṃ
+                            | na vā|<lb n="7"/>caukṣyaṃ prayuṃjīta prayogaṃ devatāgṛhe | evamādy
+                            anyad api anuvarttavyāṃ dhātraparīkṣāyām api prayojanaṃ ||<lb n="8"/>
+                            tad uktaṃ kāśyapena | yo yathā satvaḥ kumāraḥ <del>sya</del><add
+                                place="below-margin">syātta</add>thā satvām evāsya dhātrīm
+                            upasthāpayet | kiṃ kāraṇaṃ tad vipāyā<lb n="9"/>nirdhāraṇaṃ bhavati tad
+                            uktaṃ | tatraiva | piśācasatvānānāryo kumāraḥ samudīkṣitanirvāṇām eva
+                            cāpnoti | tathā rā<lb n="10"/> kṣasasatvā ity ādi || |</l>
+                    </lg>
+
+
+                    <trailer>iti śauśrute śārīre nyāyacaṃdrikāyāṃ paṃjikāyāṃ garbhavyākaraṇaṃ <add
+                            place="inline">||</add></trailer>
+                </div>
+            </div>
+        </body>
+    </text>
+    <facsimile>
+        <!--    <graphic url="https://iiif.archive.org/iiif/add.2491/manifest.json"/> -->
+        <graphic url="https://cudl.lib.cam.ac.uk//iiif/MS-ADD-02491"/>
+    </facsimile>
+
+</TEI>
