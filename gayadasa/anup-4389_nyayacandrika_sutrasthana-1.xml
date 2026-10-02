@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tei-to-html.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <script src="./lib/js/xslt-polyfill.min.js" xmlns="http://www.w3.org/1999/xhtml"/>
+    <teiHeader xmlns="http://www.tei-c.org/ns/1.0">
+        <fileDesc>
+            <titleStmt>
+                <title>Diplomatic transcription of MS Bīkāner Anup 4389: Sūtrasthāna 1</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Suśruta project, University of Alberta</p>
+<p>Diplomatic transcription by Dr Jason Birch.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
+                    <msIdentifier>
+                        <placeName>
+                            <settlement>Bikaner</settlement>
+                            <country>India</country>
+                        </placeName>
+                        <institution>Anup Library<ptr 
+                        /></institution>
+                        <idno>4389</idno>
+                        <idno type="siglum">B1-1</idno>
+                    </msIdentifier>
+                    <msContents>
+                        <summary>A paper manuscript in Devanāgarī script. Approximately 70 folios
+                            (PDF has 140 pages)</summary>
+                        <msItem defective="true" n="1">
+                            <author role="author" xml:lang="sa">Gayadāsa</author>
+                            <title xml:lang="sa">Nyāyacandrikā</title>
+                            <!-- rubric, incipit, explicit, and finalRubric are given as examples -->
+                            <textLang mainLang="sa-Deva">Sanskrit in Devanagari script.</textLang>
+                            <!-- @mainLang can be "sa-Deva", "sa-Mlym", "sa-Telu", "sa-Newa", etc. See ISO 15924 for more details. -->
+                        </msItem>
+                    </msContents>
+                    
+                    <physDesc>
+                        <p resp="Jason Birch">Folio 1r missing.</p>      
+                        <objectDesc form="pothi">
+                            <!-- @form can be "pothi", "book", scroll", etc. -->
+                            <supportDesc material="paper"
+                                ><!-- @material can be "paper", "industrial paper", "handmade paper", "palm-leaf", "palmyra palm-leaf", "talipot palm-leaf", "birch bark", "vellum", etc. --><!-- the following <foliation> tags are examples --></supportDesc>
+                            
+                        </objectDesc>
+                        <handDesc>
+                            <handNote medium="ink black" scope="sole" script="newa"/>
+                        </handDesc>
+                        <scriptDesc>
+                            <scriptNote xml:id="script-ba-va"><foreign xml:lang="ba">ba</foreign>
+                                and <foreign xml:lang="va">va</foreign> not
+                                distinguished.</scriptNote>
+                            <scriptNote xml:id="svarna-nasals"/>
+                            <!-- see 
+				https://github.com/chchch/upama/issues/87#issuecomment-2357860543 -->
+                        </scriptDesc>
+                 
+                        
+                    </physDesc>
+                    
+                 <history>
+                        <origin>
+                            <origDate calendar="Indi" when="1555">Śaka 1477 (1555 CE).</origDate>
+                            <!-- calendar can be "Vikrama", "Śaka", etc. Dates can be approximate or exact. -->
+                        </origin>
+                    </history>
+                    
+                    
+                </msDesc>
+                
+            </sourceDesc>
+        </fileDesc>
+        
+        <revisionDesc>
+            <change when="2020-01-06" who="Jason Birch">Transcribed f. 1v.</change>
+            <change when="2026-09-16" who="Dominik Wujastyk">Updated the TEI header.</change>
+            
+            
+        </revisionDesc>
+        
+    </teiHeader>
+    
+    <text xml:lang="sa">
+        <body>
+            <div n="1" type="sthāna">
+                
+                <div n="1" type="adhyāya">
+            
+            <p>
+                <pb facs="1" n="1v" ana="1325.jpg" type="f"/>
+                
+                <l><unclear>kā</unclear>śipatiṃ prakāśitaṃ | tatra yāva<unclear reason="overwritten">chi</unclear> <subst><del rend="crossed out">a</del><add place="above">ṣya</add></subst>sya parīkṣāna bhavati | par<subst><del rend="crossed out">i</del><add place="above">ī</add></subst>kṣita yo <space unit="akṣara" quantity="9"/>  </l> 
+                
+                <l>ti śiṃ<unclear>ghā</unclear> panayanīyaḥ <space unit="akṣara" quantity="1"/>dyaḥ| upa<del rend="crossed out"><unclear>?</unclear>ānaṃ</del>dīkṣānad adhikṛtya kṛto gra<unclear>ṃtho</unclear>o dhyāyaḥ | adhikṛtya kṛte graṃthe ity anu</l>
+                
+                <l>vṛttau adhikṛtya ta<space unit="akṣara" quantity="1"/>sya <space unit="akṣara" quantity="2"/> śiśu kradadhaḥ <space unit="akṣara" quantity="1"/> sa<unclear></unclear>etyādinā i<del rend="crossed out"></del> nama deśakṛtigaṇa cācha|| 
+                    
+                    <!--CHAPTER 2 -->
+                    
+                    athavā śi</l>
+                
+                <l>ṣyopanayanam asmin vidyata<unclear>p</unclear> iti bhatau sthaḥ <space unit="akṣara" quantity="7"/> vartanāne madarthaḥ dhyāyānuvāka</l>
+                
+                <l><space unit="akṣara" quantity="8"/>m anyeṣv apy etaṃ jātīye rūdhyaya na saṃpradānīyādiṣu cha pratāyaḥ | <!-- 1.2.3 -->brāhmaṇakṣatriyavaiśvā</l>
+                
+                <l>nāṃ ma<unclear>dhye</unclear><del rend="crossed out">sa</del>mam ekatamaṃ |
+                    <!-- anyatmam ekatamaṃ? -->
+                    an<gap reason="tape" unit="akṣara" quantity="6"/>atrānvayaḥ āyurvedādhāyikuloṃ va<unclear>g</unclear>o bālyāvasthādikaṃ | śau </l>
+                <!-- āyurvedādhyāyikulaṃ -->
+                
+                <l>caṃ <unclear>p</unclear>citā| bāhyamābhyaṃtaraṃ cā<gap reason="tape" unit="akṣara" quantity="5"/> vā<add place="above">nā</add>dikaṃ | ābhyaṃtaraṃ manaḥ saṃśuddhiḥ |ācā<del rend="crossed out" unit="akṣara" quantity="3"></del> raṃ krulade </l>
+                
+                <l>trādyanugataṃ laukikaṃ <unclear>vi</unclear>dhāna<gap reason="tape" unit="akṣara" quantity="5"/>teṃdriyapūrvikā śā<unclear>??</unclear>uṇapravṛttiḥ| śatrirūn sāha śaktiḥ ba</l>
+                
+                <l>laṃ kriyā nirvarttanakṣamatā anye<gap reason="tape" unit="akṣara" quantity="5"/>r viparyayam āhuḥ | <unclear>pra</unclear>ti<del rend="crossed out" unit="akṣara" quantity="2">mni</del>rmasaṃtuṣṭismṛtiḥ pūrvan bhūtasya smara</l>
+                
+                <l>ṇa | pratipattir avabodhaḥ | anuṣṭhān<gap reason="tape" unit="akṣara" quantity="4"/>r yuktam adhi<unclear>tu</unclear>| tatrādvayayukto dhyāyo dhikṛtacāśadhāyoḥ pratha</l>
+                
+                <l>maṃ tatraidati ghā<space unit="akṣara" quantity="3"/>kṣity āha<gap reason="tape" unit="akṣara" quantity="4"/>ravayo vacchāmu<unclear>ca</unclear> vidyā phalāvāptaḥ | bāhyaḥ śaucayogād adi</l>     
+            </p>
+                    
+            <p> 
+                <pb facs="3" n="2r" ana="1326.jpg" type="f"/>
+                
+                <l>gahaṇīyaḥ <space unit="akṣara" quantity="1"/> <unclear>1</unclear>yantaraśaucayogād ānurādhiṃ sa cādhī| ācārayogāna<space unit="akṣara" quantity="4"/>praphalamaṃ<unclear>tru</unclear>tādhanaṃ ya yogāt</l>
+   
+                <l>sanmārgapava pravartate | śaktiyogāt sadā śāstro dhogaṃ karoti| balayogāt śāstrakleśaṃ kṣayate| te prayātya</l>
+                
+                <l><unclear>sthā</unclear>ne vā<space unit="akṣara" quantity="3"/>śena graṃvaṃ vi<unclear>bha</unclear>rtti| dhṛtiyogād avyākulavittaśāstraṃ ciṃtayan prasannīkaroti|| yogād abhyasta</l>
+                <l>na vismarati prati pratyāśāstrārtham avagacha<unclear>dva</unclear>ti ricyate|| <space unit="akṣara" quantity="8"/>nuśabdo jihvādi<unclear>bh</unclear>ipra</l>
+                
+                <l>tyekam a<unclear>hi</unclear> saṃbodhyate| ceṣṭākāyaparisyaṃdaḥ ato viparitaguṇaṃ nopanayet </l>
+                          
+            </p>
+                    
+                </div>
+                <!-- end of chapter 1 of Sūtrasthāna-->
+            </div>
+            <!-- end of sthana -->
+            
+        </body>
+    </text>
+            
+    <facsimile>
+        <graphic url="https://iiif.archive.org/iiif/ms-bikaner-anup-4389/manifest.json"/>
+    </facsimile>    
+</TEI>
