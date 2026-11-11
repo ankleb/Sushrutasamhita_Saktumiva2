@@ -37,8 +37,25 @@ attaches to the preceding word (प्राप्तोऽस्मि). The vi
 daṇḍa or other punctuation, at a verse break, or at the end of a passage.
 Readings in the apparatus are joined the same way. If a lemma becomes part of a
 larger joined unit, the whole unit is marked in the text, and the lemma itself is
-printed in the apparatus (`\lemma{अध्यायं}`). Long units are broken between
-akṣaras using polyglossia's Sanskrit hyphenation patterns. `<pc>` separators
+printed in the apparatus (`\lemma{अध्यायं}`).
+
+## Line breaking
+
+Joined units are long and have few spaces. TeX also won't hyphenate a word that
+comes right after a reledmac apparatus marker. So the converter adds its own
+break points at akṣara boundaries in words of 7 or more akṣaras, keeping at least
+2 akṣaras together at each end. Conjuncts, mātrās, anusvāra and visarga are
+never split.
+
+- In the main text the break point is `\-`, so a break shows a hyphen.
+- In the apparatus it is `\appbrk` (zero-width glue), so a break shows no
+  hyphen. reledmac's paragraphed footnotes throw away discretionaries and
+  penalties, so only glue works there.
+- `\tolerance=1000 \emergencystretch=3em` lets lines loosen, so they don't run
+  into the margin.
+- A daṇḍa is tied to the word before it, so it never starts a line.
+- Each adhyāya is its own reledmac numbering section, which keeps TeX's memory
+  use bounded. `<pc>` separators
 between compound members (each one a single space) are closed up in both text and
 readings. An English note anchored inside a joined unit is moved to the end of
 that unit. `--no-join` turns joining off and keeps the `<pc>` spaces.

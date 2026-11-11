@@ -34,6 +34,10 @@
 \newcommand{\versepar}{\leftskip=2.5em}
 
 \linespread{1.15}
+% joined Devanagari has few interword spaces: let TeX loosen lines instead of overrunning
+\tolerance=1000 \emergencystretch=3em
+% break point inside long words in the apparatus (reledmac drops \- there)
+\newcommand{\appbrk}{\hskip0pt plus 0.3pt\relax}
 
 \title{\normalfont The Compendium of Suśruta\\[4pt]
   \large According to the Nepalese Manuscripts\\[10pt]
